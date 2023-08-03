@@ -1,0 +1,109 @@
+body {
+  /* background-color: #EBDED5; */
+  width: 24.5rem;
+  margin: 0 auto;
+}
+#main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  /* height: 1000px; */
+}
+.header {
+  background-color: rgb(37, 42, 47);
+  position: absolute;
+  width: inherit;
+  top: 12%;
+  transform: translateY(-20%);
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  /* z-index: 99; */
+}
+span {
+  color: white;
+  font-size: 12px;
+  font-family: 'Pretendard-Regular';
+  font-weight: bold;
+  padding-left: 25px;
+}
+img {
+  width: 70px;
+  padding-right: 20px;
+}
+.iphone-x {
+  position: relative;
+  margin: 40px auto;
+  width: 438px;
+  height: 886px;
+  border-radius: 40px;
+  /* background-color: #1f1f1f; */
+  box-shadow: 20px 20px 50px 0px #1f1f1f, 0 0 0 13px #191919, 0 0 0 20px #111, 8px 8px 40px #000;
+  overflow: hidden;
+}
+.iphone-x:before, .iphone-x:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.iphone-x:after {
+  bottom: 7px;
+  width: 140px;
+  height: 4px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+.iphone-x:before {
+  top: -4px;
+  width: 56%;
+  height: 25px;
+  background-color: #1f1f1f;
+  border-radius: 0 0 40px 40px;
+}
+.iphone-x .speaker {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 6px);
+  height: 8px;
+  width: 15%;
+  background-color: #101010;
+  border-radius: 8px;
+  box-shadow: inset 0 -3px 3px 0 rgba(255, 255, 255, 0.2);
+}
+.iphone-x .camera {
+  position: absolute;
+  left: 10%;
+  top: -4px;
+  z-index: 3;
+  transform: translate(180px, 4px);
+  width: 12px;
+  height: 12px;
+  background-color: #101010;
+  border-radius: 12px;
+  box-shadow: inset 0 -3px 2px 0 rgba(255, 255, 255, 0.2);
+  z-index: 99;
+}
+.iphone-x .camera:after {
+  content: "";
+  position: absolute;
+  background-color: #2d4d76;
+  width: 6px;
+  height: 6px;
+  top: 3px;
+  left: 3px;
+  display: block;
+  border-radius: 4px;
+  box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+iframe {
+  position: absolute;
+  top: 42px; left: 3px; scale: 1.026;
+}

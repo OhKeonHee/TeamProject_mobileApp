@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main</title>
+  <script src="https://kit.fontawesome.com/a4ef07a409.js" crossorigin="anonymous"></script>
+  <script defer src="/Team.js/main.js"></script>
+  <link rel="stylesheet" href="/Team_css/style(gaeul).css">
+</head>
+<body>
+  <div class="container main">
+    <div class="main_inner">
+      <div class="main_content">
+        <div class="main_header">
+          <h2>입소문</h2>
+          <h3>안녕하세요.  <span id="nickname" onclick="location.href='my_page.html'"></span> 님</h3>
+        </div>
+        <div class="main_lnb">
+          <div class="filter_search">
+            <div class="filter">
+              <select id="place_filter">
+                <option id="default">지역</option>
+                <option>은평 / 서대문</option>
+                <option>종로</option>
+                <option>대학로</option>
+                <option>삼청동</option>
+                <option>강북 / 성북</option>
+                <option>노원 / 도봉 / 의정부</option>
+                <option>중랑 / 광진</option>
+                <option>동대문 / 성동</option>
+                <option>중구</option>
+                <option>건대</option>
+                <option>이태원</option>
+                <option>광화문 / 인사동</option>
+                <option>명동</option>
+                <option>용산</option>
+                <option>신촌</option>
+                <option>홍대 - 연남</option>
+                <option>상수 - 합정</option>
+                <option>마포</option>
+                <option>강서 / 양천 / 김포</option>
+                <option>영등포</option>
+                <option>구로 - 금천</option>
+                <option>관악</option>
+                <option>동작</option>
+                <option>서초</option>
+                <option>가로수길</option>
+                <option>강남역</option>
+                <option>강남구</option>
+                <option>송파</option>
+                <option>강동 / 하남</option>
+              </select>
+              <select id="person_filter">
+                <option id="default">인원 수</option>
+                <option>1명</option>
+                <option>2명</option>
+                <option>3명</option>
+                <option>4명</option>
+                <option>5명</option>
+                <option>6명</option>
+                <option>단체</option>
+              </select>
+              <select id="hash_filter">
+                <option id="default"># ---</option>
+                <option>#조용한</option>
+                <option>#공부하기 좋은</option>
+                <option>#콘센트</option>
+                <option>#소개팅</option>
+                <option>#디저트</option>
+                <option>#카공</option>
+                <option>#데이트</option>
+                <option>#사진맛집</option>
+                <option>#사진명소</option>
+                <option>#핫플</option>
+                <option>#아늑한</option>
+                <option>#대화</option>
+                <option>#편한좌석</option>
+                <option>#주차가능</option>
+                <option>#노키즈존</option>
+                <option>#노시니어존</option>
+                <option>#베이커리</option>
+                <option>#비건</option>
+                <option>#넓은</option>
+                <option>#친환경</option>
+                <option>#테라스</option>
+                <option>#지하철역과 가까운</option>
+                <option>#책</option>
+                <option>#케이크</option>
+                <option>#달달한</option>
+                <option>#클럽</option>
+              </select>
+            </div>
+            <!-- <a href="#">
+              <i class="fas fa-sliders"></i>
+            </a> -->
+          </div>
+        </div>
+        <div class="main_map">
+          <div class="map_img">
+            <img src="/Team_img/map.jpg" alt="">
+            <button id="Jongro"><a href="/mobile_html/place_map_api/my_map_api_jongro.html"></a></button>
+            <button id="Gangbuk"></button>
+            <button id="Nowon"></button>
+            <button id="Eunpyeong"></button>
+            <button id="Gwanghwamun"></button>
+            <button id="Daehakro"></button>
+            <button id="Hongdae"><a href="/mobile_html/place_map_api/my_map_api_Hongdae.html"></a></button>
+            <button id="Sinchon"></button>
+            <button id="Junggu"></button>
+            <button id="Sangsu"></button>
+            <button id="Myeongdong"></button>
+            <button id="Samcheongdong"></button>
+            <button id="Jungnang"></button>
+            <button id="Dongdaemun"></button>
+            <button id="Kondae"></button>
+            <button id="Mapo"></button>
+            <button id="Yongsan"></button>
+            <button id="Itaewon"></button>
+            <button id="Seongsu"></button>
+            <button id="Gangseo"></button>
+            <button id="Dongjag"></button>
+            <button id="Garosugil"></button>
+            <button id="Gangdong"></button>
+            <button id="Yeongdeungpo"></button>
+            <button id="Seocho"></button>
+            <button id="Gangnam_station"></button>
+            <button id="Songpa"></button>
+            <button id="Guro"></button>
+            <button id="Gwanag"></button>
+            <button id="Gangnamgu"></button>
+          </div>  
+        </div>
+      </div>
+      <div class="suggestion">
+        <a href="/mobile_html/recommendation.html">
+        <div class="suggestion_title">
+          <h3>입소문러 추천</h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div></a>
+        <div class="suggestion_slider_container">
+          <div class="suggestion_slider">
+            <div class="suggestion_content">
+              <a href="/mobile_html/detail_1.html"><img src="/Team_img/rec_item_01.jpeg" alt="샘플이미지"></a>
+              <span class="cafeList">일명 '프토’ 처돌이의<br/> 프렌치 토스트 맛집</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_02.jpeg" alt="샘플이미지">
+              <span class="cafeList">예쁜 노을을 볼 수 있는<br/> 해방촌 카페 모음</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_03.jpeg" alt="샘플이미지">
+              <span class="cafeList">바쁜 현대인들을 위한<br/> 카페인 충전소<br/> 에스프레소 바 8곳</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_04.png" alt="샘플이미지">
+              <span class="cafeList">웨이팅 기본 두시간,<br/> 서울에서 가장 핫한 카페 모음집</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_05.jpeg" alt="샘플이미지">
+              <span class="cafeList">서울 아인슈페너 맛집 5곳</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_06.jpeg" alt="샘플이미지">
+              <span class="cafeList">짙어지는 녹음,<br/>  비오는 날 다녀오기 좋은<br/>  망원동 카페 5곳</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_07.jpeg" alt="샘플이미지">
+              <span class="cafeList">성수동의 작업하기 좋은 공간 6곳</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_08.jpeg" alt="샘플이미지">
+              <span class="cafeList">한 놈만 팬다 OO디저트 전문 카페 8곳</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_09.jpeg" alt="샘플이미지">
+              <span class="cafeList">이번 주말 가기 좋은 연남동 커피 디저트 맛집 모음</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_10.jpeg" alt="샘플이미지">
+              <span class="cafeList">독서하기도, 사색하기도 좋은 서울 카페 5곳</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_11.jpg" alt="샘플이미지">
+              <span class="cafeList">조용한 동네, 서촌 카페 6곳</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_12.jpg" alt="샘플이미지">
+              <span class="cafeList">서울 탑 5 도넛 맛집!!</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_13.jpg" alt="샘플이미지">
+              <span class="cafeList">댕댕이와 함께 할 수 있는 카페 모음집</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_14.jpg" alt="샘플이미지">
+              <span class="cafeList">대한민국은 지금 약과에 미쳤다!! 약과 디저트 맛집 추천</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_15.jpg" alt="샘플이미지">
+              <span class="cafeList">보기좋은 무스가 맛도 좋다!</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_12.jpg" alt="샘플이미지">
+              <span class="cafeList">서울 탑 5 도넛 맛집!!</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_13.jpg" alt="샘플이미지">
+              <span class="cafeList">댕댕이와 함께 할 수 있는 카페 모음집</span>
+            </div>
+            <div class="suggestion_content">
+              <img src="/Team_img/rec_item_14.jpg" alt="샘플이미지">
+              <span class="cafeList">대한민국은 지금 약과에 미쳤다!! 약과 디저트 맛집 추천</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="community">
+        <a href="/mobile_html/community.html">
+        <div class="community_title">
+          <h3>소문러's TALK</h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div></a>
+        <div class="community_slider_container">
+          <div class="community_slider">
+            <div class="community_content">
+              <div id="userImage">
+                <img src="/Team_img/post_userImage_1.jpg" alt="">
+              </div>
+              <div class="post_right">
+                <h3 id="userName">스폰지밥</h3>
+                <a href="/mobile_html/community_post/post1.html"><span id="post_txt">달팽이 사료 맛있는 집 추천해주세요.</span></a>
+              </div>
+            </div>
+            <div class="community_content">
+              <div id="userImage">
+                <img src="/Team_img/post_userImage_2.jpg" alt="">
+              </div>
+              <div class="post_right">
+                <h3 id="userName">영남회장</h3>
+                <a href="/mobile_html/community_post/post1.html"><span id="post_txt">백숙 잘하는 집 백숙 잘하는 집 백숙 잘하는 집 백숙 잘하는 집</span></a>
+              </div>
+            </div>
+            <div class="community_content">
+              <div id="userImage">
+                <img src="/Team_img/post_userImage_3.jpg" alt="">
+              </div>
+              <div class="post_right">
+                <h3 id="userName">99대장 나선욱</h3>
+                <a href="/mobile_html/community_post/post1.html"><span id="post_txt">소정이랑 좋은 자리, 좋은 시간 보낼 수 있는 곳 추천받는다. 얘들아</span></a>
+              </div>
+            </div>
+            <div class="community_content">
+              <div id="userImage">
+                <img src="/Team_img/post_userImage_4.jpg" alt="">
+              </div>
+              <div class="post_right">
+                <h3 id="userName">이호창 본부장</h3>
+                <a href="/mobile_html/community_post/post1.html"><span id="post_txt">김갑생김 할머니 김으로 만드는 김밥집 어디에 있나요??</span></a>
+              </div>
+            </div>
+            <div class="community_content">
+              <div id="userImage">
+                <img src="/Team_img/post_userImage_1.jpg" alt="">
+              </div>
+              <div class="post_right">
+                <h3 id="userName">스폰지밥</h3>
+                <a href="/mobile_html/community_post/post1.html"><span id="post_txt">달팽이 사료 맛있는 집 추천해주세요.</span></a>
+              </div>
+            </div>
+            <div class="community_content">
+              <div id="userImage">
+                <img src="/Team_img/post_userImage_1.jpg" alt="">
+              </div>
+              <div class="post_right">
+                <h3 id="userName">스폰지밥</h3>
+                <a href="/mobile_html/community_post/post1.html"><span id="post_txt">달팽이 사료 맛있는 집 추천해주세요.</span></a>
+              </div>
+            </div>
+            <div class="community_content">
+              <div id="userImage">
+                <img src="/Team_img/post_userImage_1.jpg" alt="">
+              </div>
+              <div class="post_right">
+                <h3 id="userName">스폰지밥</h3>
+                <a href="/mobile_html/community_post/post1.html"><span id="post_txt">달팽이 사료 맛있는 집 추천해주세요.</span></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="gnb">
+      <a href="/mobile_html/main.html"><i class="fas fa-house"></i>홈</a>
+      <a href="/mobile_html/search.html"><i class="fa-solid fa-magnifying-glass"></i>검색</a>
+      <a href="/mobile_html/main_map.html"><i class="fa-regular fa-map"></i>지도</a>
+      <a href="/mobile_html/my_map_page.html"><i class="fa-regular fa-bookmark"></i>나의 저장</a>
+      <a href="/mobile_html/my_page.html"><i class="fa-regular fa-user"></i>내 정보</a>
+    </div>
+  </div>
+</body>
+</html>

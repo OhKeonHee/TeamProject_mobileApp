@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Team_css/style(byungsun).css">
+  <script defer src="/Team.js/writeReview.js"></script>
+  <script defer src="https://kit.fontawesome.com/79e902675f.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="writeReview_container">
+    <div class="writeReview_header">
+      <a href="/mobile_html/shopdetail.html"><i class="fas fa-chevron-left"></i></a>
+      <h2>소문러의 소문을 남겨주세요 !</h2>
+    </div>
+    <div class="writeReview_title">
+      <img src="/Team_img/podobread.jpg" alt="">
+      <div class="writeReview_title_name">
+        <h2>포도 빵집</h2>
+        <div>
+          <i class="fa-regular fa-star star1"></i>
+          <i class="fa-regular fa-star star2"></i>
+          <i class="fa-regular fa-star star3"></i>
+          <i class="fa-regular fa-star star4"></i>
+          <i class="fa-regular fa-star star5"></i>
+        </div>
+      </div>
+    </div>
+    <div class="writeReview_pic">
+      <h3>사진을 추가해주세요 (최대 5장 까지)</h3>
+      <div class="writeReview_pic_plus_box">
+        <div class="writeReview_pic_plus" id="writeReview_pic_plus1">
+          <input class="plusPic1" id="plusPic1" type="file"></input>
+          <label for="plusPic1" class="plusPicLabel plusPicLabel1"><i class="fas fa-camera"></i></label>
+        </div>
+        <div class="writeReview_pic_plus" id="writeReview_pic_plus2">
+          <input class="plusPic2" id="plusPic2" type="file"></input>
+          <label for="plusPic2" class="plusPicLabel plusPicLabel2"><i class="fas fa-camera"></i></label>
+        </div>
+        <div class="writeReview_pic_plus" id="writeReview_pic_plus3">
+          <input class="plusPic3" id="plusPic3" type="file"></input>
+          <label for="plusPic3" class="plusPicLabel plusPicLabel3"><i class="fas fa-camera"></i></label>
+        </div>
+        <div class="writeReview_pic_plus" id="writeReview_pic_plus4">
+          <input class="plusPic4" id="plusPic4" type="file"></input>
+          <label for="plusPic4" class="plusPicLabel plusPicLabel4"><i class="fas fa-camera"></i></label>
+        </div>
+        <div class="writeReview_pic_plus" id="writeReview_pic_plus5">
+          <input class="plusPic5" id="plusPic5" type="file"></input>
+          <label for="plusPic5" class="plusPicLabel plusPicLabel5"><i class="fas fa-camera"></i></label>
+        </div>
+      </div>
+    </div>
+    <div class="writeReview_hashtag">
+      <h3>해시태그를 추가해주세요 (최대 3개 까지)<br /><span>예시 : #분위기 좋은 #데이트 코스</span></h3>
+      <div>
+        <input id="hash1" type="text" placeholder="+"></input>
+        <input id="hash2" type="text" placeholder="+"></input>
+        <input id="hash3" type="text" placeholder="+"></input>
+      </div>
+    </div>
+    <div class="writeReview_textarea">
+      <textarea class="writeReview_textarea_textarea" name="" id="" cols="47" rows="15" placeholder="소문러가 전하고싶은 소문을 작성해주세요. (필수 *)"></textarea>
+    </div>
+    <div class="writeReview_writebutton">
+      <a href="#"><button id="writebutton">소문 작성하기</button></a>
+    </div>
+    <div class="review_error">
+      <h2>리뷰를 작성하시려면 로그인을 해주세요.</h2>
+      <hr>
+      <div>
+        <a href="/mobile_html/shopdetail.html" id="ok">확인</a>
+        <a href="/mobile_html/signin.html" id="gotologin">로그인 하기</a>
+      </div>
+    </div>
+    <div class="review_error_noText">
+      <h2>리뷰를<br>작성하지 않으셨습니다.</h2>
+      <hr>
+      <div>
+        <a href="/mobile_html/writeReview.html" id="close">닫기</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

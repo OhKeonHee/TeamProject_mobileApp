@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="https://kit.fontawesome.com/79e902675f.js" 
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Team_css/style(gaeul).css">
+  <script defer src="/Team.js/my_list.js"></script>
+</head>
+<body>
+  <div class="container my_space">
+    <!-- <div class="space_title_header">
+      <h2>공간</h2>
+    </div> -->
+    <div id="mysave_map">
+      <div class="myspace_header">
+        <h2 class="mylist"> 저장한 맵 </h2>
+        <span><a href="/mobile_html/my_list.html">전체보기 <i class="fa-solid fa-chevron-right"></i></a></span>
+      </div>
+      <div id="list_write">
+        <div class="list_writeSlider">
+          <div class="list_item">
+            <a href="/mobile_html/detail_1.html"><img src="/Team_img/rec_item_01.jpeg" alt="샘플이미지"></a>
+            <span class="cafeList">일명 '프토’ 처돌이의<br/> 프렌치 토스트 맛집</span>
+          </div>
+          <div class="list_item">
+            <a href="/mobile_html/detail_2.html"><img src="/Team_img/rec_item_06.jpeg" alt="샘플이미지"></a>
+            <span class="cafeList">짙어지는 녹음,<br/> 비오는 날 가면 좋은 <br/>  망원동 카페 5곳</span>
+          </div>
+          <button class="list_item new_list newListButton" >
+            <i class="fa-solid fa-plus"></i>
+            <span>새 리스트 만들기</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="gap"></div>
+    <div id="mysave_space">
+      <div class="myspace_header">
+        <h2>저장한 공간</h2>
+        <a id="show_map" href="/mobile_html/my_map_page_mapView.html"><i class="fa-regular fa-map"></i> 지도로 보기 </a>
+        <button id="space_edit">편집</button>
+      </div>
+      <div class="myspace_wrap">
+        <div class="myspace_content">
+          <a href="/mobile_html/shopdetail.html"><img src="/Team_img/detail_item_01_01.jpeg" alt=""></a>
+          <button id="delete_myspace1" onclick="this.parentElement.style.display='none'"><i class="fas fa-trash-can"></i></button>
+          <div class="space_location">
+            <div class="space_icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <p>마포구, 연남동</p>
+          </div>
+          <span>조앤도슨</span>
+        </div>
+        <div class="myspace_content">
+          <img src="/Team_img/map_thum_06_01.jpg" alt="">
+          <button id="delete_myspace2" onclick="this.parentElement.style.display='none'"><i class="fas fa-trash-can"></i></button>
+          <div class="space_location">
+            <div class="space_icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <p>용산구, 이태원</p>
+          </div>
+          <span>프루프인더커피</span>
+        </div>
+        <div class="myspace_content">
+          <img src="/Team_img/detail_item_02_02_03.jpeg" alt="">
+          <button id="delete_myspace3" onclick="this.parentElement.style.display='none'"><i class="fas fa-trash-can"></i></button>
+          <div class="space_location">
+            <div class="space_icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <p>용산구, 한남</p>
+          </div>
+          <span>저스티나</span>
+        </div>
+        <div class="myspace_content">
+          <img src="/Team_img/detail_item_02_05_02.jpeg" alt="">
+          <button id="delete_myspace4" onclick="this.parentElement.style.display='none'"><i class="fas fa-trash-can"></i></button>
+          <div class="space_location">
+            <div class="space_icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <p>마포구,  망원동</p>
+          </div>
+          <span>포스트노빌즈</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="new_list_content">
+    <div class="list_header">
+      <h2>새 리스트</h2>
+      <button id="list_deleteBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="list_box">
+      <input class="list_boxName" type="text" placeholder="리스트 이름을 입력해주세요 (최대 20자)">
+      <input class="list_boxEx" type="text" placeholder="설명을 간단히 입력해주세요 ">
+      <button>확인</button>
+    </div>
+  </div>  
+  <div class="gnb">
+    <a href="/mobile_html/main.html"><i class="fas fa-house"></i>홈</a>
+    <a href="/mobile_html/search.html"><i class="fa-solid fa-magnifying-glass"></i>검색</a>
+    <a href="/mobile_html/main_map.html"><i class="fa-regular fa-map"></i>지도</a>
+    <a href="/mobile_html/my_map_page.html"><i class="fa-regular fa-bookmark"></i>나의 저장</a>
+    <a href="/mobile_html/my_page.html"><i class="fa-regular fa-user"></i>내 정보</a>
+  </div>
+</body>
+</html>

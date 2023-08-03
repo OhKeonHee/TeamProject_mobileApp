@@ -1,0 +1,798 @@
+@import "reset";
+
+* {
+  user-select: none;
+}
+body {
+  @include default;
+}
+body::-webkit-scrollbar {
+  width: 0.1px;  /* 스크롤바의 너비 */
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* gnb css start */
+.gnb {
+  border-top: 1px solid $gray4;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 390px;
+  background-color: $snow;
+  z-index: 1;
+  padding-bottom: 20px;
+  a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+    i {
+      font-size: 24px;
+      color: $darkbrown;
+      margin-bottom: 5px;
+    }
+  }
+}
+/* gnb css end */
+
+// ====================================== 오건희CSS START =====================================
+/* ##### signup.html START ##### */
+.container.nickname {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Pretendard-Regular';
+  font-size: 16px;
+  padding-bottom: 900px;
+  .userImage {
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    .userImage_box {
+      #userImage_select {
+        position: relative;
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: $gray4;
+        img {
+          width: inherit;
+          height: inherit;
+          border-radius: 50%;
+        }
+      }
+      .plus {
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 70px;
+          color: $snow;
+          cursor: pointer;
+          opacity: 0.5;
+        }
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+  .nickname {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 0;
+    input {
+      font-family: 'Pretendard-Regular';
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid $gray4;
+      margin: 1rem 0;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+      padding-left: 10px;
+      display: none;
+    }
+  }
+  .birth {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    .birth_select {
+      margin: 1rem 0;
+      display: flex;
+      gap: 1rem;
+      padding: 0 20px;
+      select {
+        font-family: 'Pretendard-Regular';
+        padding: 10px 20px;
+        border: none;
+        border-bottom: 1px solid $gray4;
+        outline: none;
+      }
+    }
+  }
+  .gender {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 0;
+    #gender {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+      padding: 0 20px;
+      .man,
+      .woman {
+        label {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  button {
+    cursor: pointer;
+    width: 80%;
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 20px;
+    background-color: $darkbrown;
+    color: $snow;
+    border: none;
+    padding: 15px 0;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* signup.html END */
+
+/* ##### RE_profile.html START ##### */
+.container.RE_profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Pretendard-Regular';
+  font-size: 16px;
+  padding-bottom: 500px;
+  .RE_profile_header {
+    width: 390px;
+    height: 76px;
+    line-height: 76px;
+    display: flex;
+    border-bottom: 1px solid $gray4;
+    h2 {
+      width: 130px;
+      text-align: center;
+      color: $darkbrown;
+      i {
+        transform: translateX(-20px);
+      }
+    }
+  }
+  
+
+  .userImage {
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    .userImage_box {
+      #userImage_select {
+        position: relative;
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: $gray4;
+        img {
+          width: inherit;
+          height: inherit;
+          border-radius: 50%;
+        }
+      }
+      .plus {
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 70px;
+          color: $snow;
+          cursor: pointer;
+        }
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+  .nickname {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 50px;
+    input {
+      font-family: 'Pretendard-Regular';
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid $gray4;
+      margin: 1rem 0;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+      padding-left: 10px;
+      display: none;
+      padding-bottom: 10px;
+    }
+    #nickname_re_txt {
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  }
+  button {
+    cursor: pointer;
+    width: 50%;
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 20px;
+    background-color: $darkbrown;
+    color: $snow;
+    border: none;
+    padding: 10px 0;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* RE_profile.html END */
+
+/* ##### Search.html START ##### */
+.search {
+  padding: 20px 10px;
+  //filter START
+  .filter_search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+    .filter {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 5%;
+      select {
+        font-family: 'Pretendard-Regular';
+        border: none;
+        border-bottom: 1px solid $gray4;
+        width: 30%;
+        padding: 5px;
+        outline: none;
+      }
+      #person_filter {
+        width: 25%;
+      }
+    }
+    a {
+      padding-right: 5%;
+      i {
+        font-size: 18px;
+      }
+    }
+  }    //filter END
+  .recent_search_area,
+  .custom_search_area {
+    padding: 10px;
+    h2 {
+      margin-bottom: 10px;
+    }
+    .recent_search,
+    .custom_search {
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      span {
+        background-color: $gray3;
+        color: $snow;
+        padding: 5px;
+        margin: 3px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .other_map_area {
+    width: inherit;
+    height: 150px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url("/Team_img/search_map.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    .other_map_txt {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translateY(-50%);
+
+      color: $snow;
+    }
+  }
+  .rising_search_area {
+    margin: 10px 0;
+    padding: 10px;
+    padding-bottom: 65px;
+    .rising_search_list {
+      background-color: $lightgray;
+      margin: 10px 0;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+/* Search.html END */
+
+/* ##### Community.html START ##### */
+.community {
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid $gray4;
+    a {
+      margin-right: 10px;
+    }
+  }
+  .post_area {
+    display: flex;
+    flex-direction: column;
+    .post {
+      position: relative;
+      display: flex;
+      padding: 20px;
+      gap: 5%;
+      border-bottom: 1px solid $gray4;
+      #userImage {
+        width: 30px;
+        height: 30px;
+        img {
+          width: inherit;
+          height: inherit;
+          border-radius: 50%;
+        }
+      }
+      .post_right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        #userName {
+          margin-bottom: 12px;
+          font-size: 14px;
+        }
+        #post_txt {
+          cursor: pointer;
+        }
+        #reply_btn {
+          display: flex;
+          margin: 20px 0;
+          margin-bottom: 5px;
+          border: none;
+          background-color: transparent;
+          gap: 5px;
+          align-items: center;
+          cursor: pointer;
+          i {
+            font-size: 12px;
+          }
+          span {
+            transform: translateY(-2px);
+          }
+        }
+      }
+      .post_icon {
+        display: flex;
+        width: 100px;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+        i {
+          font-size: 12px;
+          transform: translateY(1px);
+        }
+      }
+    }
+  }
+  
+}
+
+#community_post {
+  .post_area {
+    .post {
+      padding-bottom: 80px;
+      border-bottom: none;
+      #userName {
+        margin: 0;
+      }
+      #post_txt {
+        padding: 20px 0;
+        display: block;
+      }
+    }
+    .post_btn {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      button {
+        flex: 1;
+        background-color: transparent;
+        border: 1px solid $gray4;
+        border-right: none;
+        border-left: none;
+        font-family: 'Pretendard-Regular';
+        padding: 10px 0;
+        cursor: pointer;       
+      }
+      .heart_color {
+        color: crimson;
+      }
+    }
+    .reply_txt {
+      .post {
+        border-bottom: 1px solid $gray4;
+        padding-bottom: 20px;
+      }
+      .post_icon {
+        right: 5%;
+      }
+    }
+    .reply_area {
+      position: fixed;
+      bottom: 0;
+      width: 24rem;
+      display: flex;
+      border-top: 1px solid $lightgray;
+      padding: 10px 20px 20px 20px;
+      input {
+        flex: 7;
+        border-radius: 20px;
+        background-color: $lightgray;
+        border: none;
+        padding: 10px 20px;
+        font-family: 'Pretendard-Regular';
+        outline: none;
+      }
+      button {
+        flex: 1;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+    #heart_div {
+      background-color: $darkbrown;
+      position: fixed;
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 30px;
+      top: -10%;
+      span {
+        color: $snow;
+        font-weight: 200;
+      }
+      a {
+        transform: translateY(-10%);
+        span {
+          color: $orange;
+          font-weight: bold;
+          font-size: 13px;
+        }
+      }
+    }
+    #reply_err_div {
+      background-color: $darkbrown;
+      position: fixed;
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 30px;
+      top: -10%;
+      span {
+        color: $snow;
+        font-weight: 200;
+      }
+    }
+    #login_err_div {
+      background-color: $darkbrown;
+      position: fixed;
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 30px;
+      top: -10%;
+      span {
+        color: $snow;
+        font-weight: 200;
+      }
+    }
+  }
+}
+.heart_div_ani {
+  animation: heart_div 5s both ease-in-out;
+}
+@keyframes heart_div {
+  0% {
+    top: -20%;
+  }
+  5% {
+    top: 3%;
+  }
+  25% {
+    top: 3%;
+  }
+  50% {
+    top: 3%;
+  }
+  100% {
+    top: -10%;
+  }
+}
+
+
+// =========================================== MAP HTML&CSS
+/* ##### map.html ##### */
+.map_img {
+  border: 1px solid red;
+  width: inherit;
+  height: inherit;
+  position: relative;
+  }
+  .map_img img {
+    width: 23.5rem;
+    position: relative;
+  }
+  .map_img > button {
+      position: absolute;
+      z-index: 999;
+      border-radius: 10px;
+      border: none;
+      background-color: red;
+  }
+  .map_img > button:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+  .map_img #Jongro {
+      top: 30px;
+      left: 145px;
+      width: 40px;
+      height: 50px;
+      transform: rotate(10deg);
+  }
+  .map_img #Gangbuk {
+      top: 20px;
+      left: 255px;
+      width: 42px;
+      height: 50px;
+      transform: rotate(-10deg);
+  }
+  .map_img #Nowon {
+      top: 10px;
+      left: 305px;
+      width: 40px;
+      height: 70px;
+      transform: rotate(-10deg);
+  }
+  .map_img #Eunpyeong {
+      top: 10px;
+      left: 97px;
+      width: 40px;
+      height: 65px;
+      transform: rotate(12deg);
+  }
+  .map_img #Gwanghwamun {
+      top: 92px;
+      left: 140px;
+      width: 70px;
+      height: 40px;
+      transform: rotate(10deg);
+  }
+  .map_img #Daehakro {
+      top: 10px;
+      left: 195px;
+      width: 45px;
+      height: 40px;
+  }
+  .map_img #Hongdae {
+      top: 130px;
+      left: 90px;
+      width: 55px;
+      height: 35px;
+      transform: rotate(10deg);
+  }
+  .map_img #Sinchon {
+      top: 80px;
+      left: 70px;
+      width: 60px;
+      height: 40px;
+      transform: rotate(10deg);
+  }
+  .map_img #Junggu {
+      top: 100px;
+      left: 218px;
+      width: 35px;
+      height: 77px;
+  }
+  .map_img #Sangsu {
+      top: 170px;
+      left: 75px;
+      width: 63px;
+      height: 33px;
+      transform: rotate(10deg);
+  }
+  .map_img #Myeongdong {
+      top: 138px;
+      left: 150px;
+      width: 40px;
+      height: 40px;
+  }
+  .map_img #Jungnang {
+      top: 85px;
+      left: 315px;
+      width: 40px;
+      height: 60px;
+      transform: rotate(-9deg);
+  }
+  .map_img #Dongdaemun {
+      top: 80px;
+      left: 255px;
+      width: 50px;
+      height: 45px;
+      transform: rotate(-7deg);
+  }
+  .map_img #Kondae {
+      top: 130px;
+      left: 263px;
+      width: 50px;
+      height: 40px;
+      transform: rotate(-10deg);
+  }
+  .map_img #Mapo {
+      top: 120px;
+      left: 30px;
+      width: 50px;
+      height: 47px;
+      transform: rotate(14deg);
+  }
+  .map_img #Yongsan {
+      top: 183px;
+      left: 145px;
+      width: 52px;
+      height: 38px;
+  }
+  .map_img #Itaewon {
+      top: 187px;
+      left: 205px;
+      width: 55px;
+      height: 30px;
+      transform: rotate(-20deg);
+      border-radius: 30px;
+  }
+  .map_img #Samcheongdong {
+      top: 60px;
+      left: 190px;
+      width: 50px;
+      height: 33px;
+      transform: rotate(5deg);
+  }
+  .map_img #Gangseo {
+      top: 193px;
+      left: 17px;
+      width: 45px;
+      height: 60px;
+  }
+  .map_img #Dongjag {
+      top: 250px;
+      left: 120px;
+      width: 48px;
+      height: 50px;
+      transform: rotate(15deg);
+  }
+  .map_img #Garosugil {
+      top: 245px;
+      left: 210px;
+      width: 55px;
+      height: 35px;
+      transform: rotate(-20deg);
+  }
+  .map_img #Gangdong {
+      top: 170px;
+      left: 310px;
+      width: 55px;
+      height: 40px;
+  }
+  .map_img #Yeongdeungpo {
+      top: 227px;
+      left: 67px;
+      width: 52px;
+      height: 45px;
+      transform: rotate(30deg);
+  }
+  .map_img #Seocho {
+      top: 263px;
+      left: 173px;
+      width: 35px;
+      height: 68px;
+  }
+  .map_img #Gangnam_station {
+      top: 285px;
+      left: 215px;
+      width: 60px;
+      height: 35px;
+      transform: rotate(-20deg);
+  }
+  .map_img #Songpa {
+      top: 210px;
+      left: 320px;
+      width: 35px;
+      height: 60px;
+      transform: rotate(-27deg);
+      border-radius: 10px 40px 10px 10px;
+  }
+  .map_img #Guro {
+      top: 260px;
+      left: 30px;
+      width: 57px;
+      height: 45px;
+      border-radius: 10px 80px 10px 10px;
+  }
+  .map_img #Gwanag {
+      top: 302px;
+      left: 90px;
+      width: 70px;
+      height: 40px;
+      border-radius: 10px 30px 10px 10px;
+  }
+  .map_img #Gangnamgu {
+      top: 226px;
+      left: 273px;
+      width: 43px;
+      height: 68px;
+      transform: rotate(-20deg);
+  }
+  
+  
+/* Community.html END */
+

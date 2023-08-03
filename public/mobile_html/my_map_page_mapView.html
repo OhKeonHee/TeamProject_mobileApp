@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9248d936236b9e260b5c595a1fb30906&libraries=services"></script>
+  <script defer src="/Team.js/my_map_page_mapView.js"></script>
+  <script src="https://kit.fontawesome.com/a4ef07a409.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Team_css/style(gaeul).css">
+<style>
+  .my_map_api_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+  }
+  #map_deleteBtn {
+    padding: 2px 3px;
+  }
+  i {
+    transform: translateX(2.5px);
+  }
+  .wrap{
+    border: 5px solid #4c3525;
+    width: 250px;
+    height: 330px;
+    padding: 10px;
+    font-family: 'Pretendard-Regular';
+  }
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+  }
+  #iwcontent_img {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .ellipsis {
+    margin-top: 5px;
+  }
+  .jibun {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .link {
+    float: right;
+    padding-right: 5px;
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <div class="my_map_api_title">
+    <h3>저장한 공간</h3>
+    <button id="map_deleteBtn" onclick="location.href='/mobile_html/my_map_page.html'"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div id="map" style="width:100%;height:100vh;"></div>
+</body>
+</html>

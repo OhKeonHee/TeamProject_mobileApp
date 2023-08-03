@@ -1,0 +1,1180 @@
+@charset "UTF-8";
+/* Font */
+/* 평창평화체 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@font-face {
+  font-family: "PyeongChangPeace-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 프리텐다드 */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+/* Noto Sans (en) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+/* Heading Font Size */
+h1 {
+  font-size: 40px;
+  font-family: "PyeongChangPeace-Bold";
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Pretendard-Regular";
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-family: "Pretendard-Regular";
+}
+
+span {
+  font-size: 12px;
+  font-family: "Pretendard-Regular";
+}
+
+/* color */
+/* text-color */
+/* Mixin */
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  width: 24.5rem;
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1px; /* 스크롤바의 너비 */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* map.html */
+.map_img {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+
+.map_img img {
+  width: 23.5rem;
+  position: relative;
+  transform: translateX(-30px);
+}
+
+.map_img > button {
+  position: absolute;
+  z-index: 999;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  text-indent: -999px;
+  cursor: pointer;
+}
+
+.map_img > button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.map_img #Jongro {
+  top: 30px;
+  left: 115px;
+  width: 40px;
+  height: 50px;
+  transform: rotate(10deg);
+}
+
+.map_img #Gangbuk {
+  top: 20px;
+  left: 225px;
+  width: 42px;
+  height: 50px;
+  transform: rotate(-10deg);
+}
+
+.map_img #Nowon {
+  top: 10px;
+  left: 275px;
+  width: 40px;
+  height: 70px;
+  transform: rotate(-10deg);
+}
+
+.map_img #Eunpyeong {
+  top: 10px;
+  left: 67px;
+  width: 40px;
+  height: 65px;
+  transform: rotate(12deg);
+}
+
+.map_img #Gwanghwamun {
+  top: 92px;
+  left: 110px;
+  width: 70px;
+  height: 40px;
+  transform: rotate(10deg);
+}
+
+.map_img #Daehakro {
+  top: 10px;
+  left: 165px;
+  width: 45px;
+  height: 40px;
+}
+
+.map_img #Hongdae {
+  top: 130px;
+  left: 60px;
+  width: 55px;
+  height: 35px;
+  transform: rotate(10deg);
+}
+
+.map_img #Sinchon {
+  top: 80px;
+  left: 40px;
+  width: 60px;
+  height: 40px;
+  transform: rotate(10deg);
+}
+
+.map_img #Junggu {
+  top: 100px;
+  left: 188px;
+  width: 35px;
+  height: 77px;
+}
+
+.map_img #Sangsu {
+  top: 170px;
+  left: 45px;
+  width: 63px;
+  height: 33px;
+  transform: rotate(10deg);
+}
+
+.map_img #Myeongdong {
+  top: 138px;
+  left: 120px;
+  width: 40px;
+  height: 40px;
+}
+
+.map_img #Jungnang {
+  top: 85px;
+  left: 285px;
+  width: 40px;
+  height: 60px;
+  transform: rotate(-9deg);
+}
+
+.map_img #Dongdaemun {
+  top: 80px;
+  left: 225px;
+  width: 50px;
+  height: 45px;
+  transform: rotate(-7deg);
+}
+
+.map_img #Kondae {
+  top: 130px;
+  left: 233px;
+  width: 50px;
+  height: 40px;
+  transform: rotate(-10deg);
+}
+
+.map_img #Mapo {
+  top: 120px;
+  left: 0px;
+  width: 50px;
+  height: 47px;
+  transform: rotate(14deg);
+}
+
+.map_img #Yongsan {
+  top: 183px;
+  left: 115px;
+  width: 52px;
+  height: 38px;
+}
+
+.map_img #Itaewon {
+  top: 187px;
+  left: 175px;
+  width: 55px;
+  height: 30px;
+  transform: rotate(-20deg);
+  border-radius: 30px;
+}
+
+.map_img #Samcheongdong {
+  top: 60px;
+  left: 160px;
+  width: 50px;
+  height: 33px;
+  transform: rotate(5deg);
+}
+
+.map_img #Gangseo {
+  top: 193px;
+  left: -13px;
+  width: 45px;
+  height: 60px;
+}
+
+.map_img #Dongjag {
+  top: 250px;
+  left: 90px;
+  width: 48px;
+  height: 50px;
+  transform: rotate(15deg);
+}
+
+.map_img #Garosugil {
+  top: 245px;
+  left: 180px;
+  width: 55px;
+  height: 35px;
+  transform: rotate(-20deg);
+}
+
+.map_img #Gangdong {
+  top: 170px;
+  left: 280px;
+  width: 55px;
+  height: 40px;
+}
+
+.map_img #Yeongdeungpo {
+  top: 227px;
+  left: 37px;
+  width: 52px;
+  height: 45px;
+  transform: rotate(30deg);
+}
+
+.map_img #Seocho {
+  top: 263px;
+  left: 143px;
+  width: 35px;
+  height: 68px;
+}
+
+.map_img #Gangnam_station {
+  top: 285px;
+  left: 185px;
+  width: 60px;
+  height: 35px;
+  transform: rotate(-20deg);
+}
+
+.map_img #Songpa {
+  top: 210px;
+  left: 290px;
+  width: 35px;
+  height: 60px;
+  transform: rotate(-27deg);
+  border-radius: 10px 40px 10px 10px;
+}
+
+.map_img #Guro {
+  top: 260px;
+  left: 0px;
+  width: 57px;
+  height: 45px;
+  border-radius: 10px 80px 10px 10px;
+}
+
+.map_img #Gwanag {
+  top: 302px;
+  left: 60px;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px 30px 10px 10px;
+}
+
+.map_img #Gangnamgu {
+  top: 226px;
+  left: 243px;
+  width: 43px;
+  height: 68px;
+  transform: rotate(-20deg);
+}
+
+/* gnb css start */
+.gnb {
+  border-top: 1px solid #999999;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 390px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+.gnb a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pretendard-Regular";
+  font-size: 12px;
+}
+.gnb a i {
+  font-size: 24px;
+  color: #4c3525;
+  margin-bottom: 5px;
+}
+
+/* gnb css end */
+.btn_prev {
+  color: #BB9174;
+}
+
+/*###preloading page###*/
+.preloading {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("/Team_img/preloading.png") no-repeat center center;
+}
+
+.pre_top_title h1 {
+  position: absolute;
+  width: 200px;
+  height: 70px;
+  left: 32px;
+  top: 187px;
+  line-height: 70px;
+  color: #fff;
+  font-size: 70px;
+}
+
+.pre_top_title span {
+  font-family: "PyeongChang Peace";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.pre_tag_title {
+  position: absolute;
+  width: 145px;
+  height: 20px;
+  left: 32px;
+  top: 339px;
+  background: rgba(217, 217, 217, 0.7);
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pre_tag_title h3 {
+  line-height: 20px;
+}
+
+.pre_mid_title h1 {
+  font-family: "PyeongChang Peace";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 53px;
+  color: #FFFFFF;
+  position: absolute;
+  width: 215px;
+  height: 53px;
+  left: 32px;
+  top: 389px;
+}
+
+.pre_bot_title {
+  position: absolute;
+  width: 200px;
+  height: 58px;
+  left: 32px;
+  top: 601px;
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.pre_bot_title span {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/*###my_list page###*/
+.my_list {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.my_list_header {
+  width: inherit;
+  height: 76px;
+  line-height: 76px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #EBDED5;
+}
+
+.btn_prev {
+  width: 130px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.my_list_title h2 {
+  width: 130px;
+  text-align: center;
+  color: #4c3525;
+}
+
+.my_list_title i {
+  padding-right: 5px;
+}
+
+.btn_my_map h3 {
+  width: 130px;
+  padding-right: 20px;
+  text-align: right;
+  color: #BB9174;
+}
+
+.my_list_nav {
+  width: 390px;
+  height: 48px;
+  line-height: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-right: 12px;
+  font-weight: 800;
+}
+
+.my_list_nav a {
+  padding-right: 8px;
+  font-size: 16px;
+}
+
+.my_list_nav span:nth-child(2) a {
+  color: #BB9174;
+}
+
+.my_list_view {
+  width: inherit;
+  height: 100vh;
+}
+
+.view_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-bottom: 1px solid #EBDED5;
+}
+
+.view_item img {
+  width: 80px;
+  height: 48px;
+}
+
+.view_item_list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  padding-left: 16px;
+  flex: 1;
+}
+
+.view_item_list a {
+  color: #4c3525;
+}
+
+.view_item_list img {
+  padding-right: 16px;
+}
+
+.btn_delitem {
+  width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20px;
+  flex-direction: row;
+  flex: 1;
+}
+
+.btn_delitem a {
+  color: #4c3525;
+}
+
+.view_more {
+  width: 390px;
+  height: 18%;
+  line-height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.view_more i {
+  font-size: 8px;
+  padding: 5px;
+  color: #777777;
+  cursor: pointer;
+}
+
+.my_list .gnb a:nth-child(4) i {
+  color: #BB9174;
+}
+
+/*###my_map_page###*/
+.my_map {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.my_map_header {
+  width: 390px;
+  height: 76px;
+  line-height: 76px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #999999;
+}
+
+.my_map_title h2 {
+  width: 130px;
+  text-align: center;
+  color: #4c3525;
+}
+
+.my_map_title i {
+  padding-right: 5px;
+}
+
+.view_my_category h3 {
+  width: 130px;
+  padding-right: 20px;
+  text-align: right;
+  color: #BB9174;
+}
+
+.my_map_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content_title {
+  display: flex;
+  height: 48px;
+  line-height: 48px;
+  justify-content: left;
+  flex-direction: row;
+  padding-left: 20px;
+}
+
+.map_image {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.my_map_hot {
+  padding: 0 20px;
+  margin-bottom: 65px;
+}
+
+.hot_title {
+  display: flex;
+  height: 48px;
+  line-height: 48px;
+  justify-content: left;
+  flex-direction: row;
+}
+
+/*my page*/
+.my_page {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.my_page .my_page_header {
+  width: 390px;
+  height: 76px;
+  line-height: 76px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #999999;
+}
+.my_page .my_page_header .my_page_title h2 {
+  width: 130px;
+  text-align: center;
+  color: #4c3525;
+}
+.my_page .user_info {
+  height: 180px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.my_page .user_info .user_profile_img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.my_page .user_info .user_info_contents {
+  display: flex;
+  flex-direction: column;
+  font-family: "Pretendard-Regular";
+}
+.my_page .user_info .user_info_contents .nickname {
+  font-size: 16px;
+}
+.my_page .user_info .user_info_contents .nickname #nickname {
+  font-size: 16px;
+  display: inline-block;
+}
+.my_page .user_info .user_info_contents .user-summary {
+  font-family: "Pretendard-Regular";
+}
+.my_page .user_info .user_info_contents .user-summary .review {
+  display: flex;
+  flex-direction: row;
+  margin: 12px 0;
+}
+.my_page .user_info .user_info_contents .user-summary .review span {
+  padding-right: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.my_page .user_info .user_info_contents .profile_edit span {
+  color: #FF5C00;
+  font-size: 13px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.my_page .user_info .user_info_contents .profile_edit .profile_edit:hover h3 {
+  color: #FF5C00;
+}
+.my_page .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.my_page .title h3 {
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  padding: 8px;
+}
+.my_page .mypage_daylog #line1 {
+  width: 50%;
+  border: 2px solid #4c3525;
+}
+.my_page .mypage_daylog .select_option {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #4c3525;
+  padding: 10px 0;
+  padding-right: 10px;
+}
+.my_page .mypage_daylog .select_option div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+}
+.my_page .mypage_daylog .select_option .subhead {
+  width: 50%;
+  border: none;
+  background: none;
+  color: #7c6e62;
+  cursor: pointer;
+  font-family: "Pretendard-Regular";
+}
+.my_page .mypage_daylog .select_option #btn_timeline {
+  color: #4c3525;
+}
+.my_page .mypage_daylog .select_option #map {
+  border: 1px solid #7c6e62;
+  border-radius: 30px;
+  background: none;
+  font-size: 10px;
+  padding: 5px 10px;
+  color: #4c3525;
+}
+.my_page .mypage_daylog .select_img {
+  display: none;
+}
+.my_page .mypage_daylog .select_img .imgpage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+.my_page .mypage_daylog .select_img .imgpage button {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.my_page .mypage_daylog .select_timeline {
+  display: block;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage #timeline {
+  border: 2px solid #4c3525;
+  margin-left: 20px;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap {
+  margin-top: 10px;
+  position: relative;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap .visited_place_contents {
+  margin-left: 15px;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap .visited_place_contents .time_circle1 {
+  border: 1px solid #4c3525;
+  border-radius: 50%;
+  background-color: #4c3525;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: -8px;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap .visited_place_contents .time_circle2 {
+  border: 1px solid #4c3525;
+  border-radius: 50%;
+  background-color: #4c3525;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 185px;
+  left: -8px;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap .visited_place_contents .visited_place_content {
+  width: 320px;
+  padding: 10px;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap .visited_place_contents .visited_place_content .whichCafe {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  height: 27px;
+  align-items: center;
+  cursor: pointer;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap .visited_place_contents .visited_place_content .whichCafe i {
+  font-size: 16px;
+  color: #7c6e62;
+  margin-right: 5px;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap .visited_place_contents .visited_place_content .whichCafe p {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Pretendard-Regular";
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap .visited_place_contents .visited_place_content .location {
+  margin-left: 20px;
+  color: #777777;
+}
+.my_page .mypage_daylog .select_timeline .timelinepage .visited_place_wrap .visited_place_contents:first-child {
+  margin-bottom: 20px;
+}
+.my_page .mypage_comment {
+  display: none;
+  font-family: "Pretendard-Regular";
+}
+.my_page .mypage_comment #line2 {
+  width: 50%;
+  margin-left: 50%;
+  border: 2px solid #4c3525;
+}
+.my_page .mypage_comment .post_area {
+  display: flex;
+  flex-direction: column;
+}
+.my_page .mypage_comment .post_area .post {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  gap: 5%;
+  border-bottom: 1px solid #999999;
+}
+.my_page .mypage_comment .post_area .post #userImage {
+  width: 30px;
+  height: 30px;
+}
+.my_page .mypage_comment .post_area .post #userImage img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+.my_page .mypage_comment .post_area .post .post_right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.my_page .mypage_comment .post_area .post .post_right #userName {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.my_page .mypage_comment .post_area .post .post_right #post_txt {
+  cursor: pointer;
+  font-family: "Pretendard-Regular";
+}
+.my_page .mypage_comment .post_area .post .post_right #reply_btn {
+  display: flex;
+  margin: 20px 0;
+  margin-bottom: 5px;
+  border: none;
+  background-color: transparent;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.my_page .mypage_comment .post_area .post .post_right #reply_btn i {
+  font-size: 12px;
+}
+.my_page .mypage_comment .post_area .post .post_right #reply_btn span {
+  transform: translateY(-2px);
+}
+.my_page .mypage_comment .post_area .post .post_icon {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+}
+.my_page .mypage_comment .post_area .post .post_icon i {
+  font-size: 12px;
+  transform: translateY(1px);
+}
+
+.error_noLogin {
+  z-index: 99;
+  position: absolute;
+  background-color: #F9EBC7;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  text-align: center;
+  padding: 10px 10px;
+  border: 2px solid #4c3525;
+  animation: reviewError 0.2s ease-in both;
+  /* display: none; */
+}
+.error_noLogin h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.error_noLogin hr {
+  border: 1px solid #4c3525;
+  margin-bottom: 5px;
+}
+.error_noLogin a {
+  margin-top: 10px;
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+}
+.error_noLogin > div {
+  display: flex;
+  justify-content: space-around;
+}
+.error_noLogin #ok {
+  border: 1px solid #4c3525;
+  padding: 10px 20px;
+  width: 40%;
+}
+.error_noLogin #gotologin {
+  width: 40%;
+  border: 1px solid #FF5C00;
+  padding: 10px 10px;
+  background-color: #FF5C00;
+  color: #FFFFFF;
+}
+
+.error_black {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 95.5vh;
+  width: 100vw;
+  top: -300%;
+  left: -20%;
+  z-index: -1;
+}
+
+/*###following_map_page###*/
+.following_map {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.following_map_header {
+  width: 390px;
+  height: 76px;
+  line-height: 76px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #999999;
+}
+
+.following_map_title h2 {
+  width: 130px;
+  text-align: center;
+  color: #4c3525;
+}
+
+.following_map_contents_title {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.following_map_tab {
+  width: 100%;
+  height: 72px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid #EBDED5;
+}
+
+.left_following_map_tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.left_following_map_tab h3 span a {
+  padding-left: 12px;
+  text-decoration: underline;
+  color: #BB9174;
+}
+
+.left_top_tab {
+  display: flex;
+  padding-bottom: 12px;
+  gap: 3px;
+  align-items: center;
+  height: 30px;
+}
+
+.left_top_tab h3 {
+  padding-right: 12px;
+}
+
+.left_top_tab i {
+  color: #BB9174;
+  margin-left: 5px;
+}
+
+.map_share {
+  z-index: 9999;
+}
+
+.right_tab a {
+  color: #BB9174;
+}
+
+.following_map_hot_tab {
+  display: flex;
+  width: 100%;
+  height: 38%;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.following_item_list {
+  display: flex;
+  height: 63px;
+  border-bottom: 1px solid #EBDED5;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.following_item_list img {
+  width: 80px;
+  height: 48px;
+}
+
+.sns_tab {
+  position: absolute;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 40px;
+  display: none;
+  flex-direction: column;
+  display: none;
+}
+
+.sns_tab i {
+  color: #FFFFFF;
+}
+
+.sns_icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  background-color: #BB9174;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.sns_tab > .sns_icons i {
+  font-size: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/*###following_map_바로가기###*/
+.following_map_category {
+  background-color: #BB9174;
+}
+
+.btn_my_following_map {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn_my_following_map h3 {
+  flex: 2;
+  text-align: center;
+}
+
+.btn_my_following_map h3 a {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.following_map_category_items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.following_map_category_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #EBDED5;
+}
+
+.following_map_category_item h3 a {
+  color: #4c3525;
+}
+
+.following_map_category_item h3:nth-child(1) {
+  flex: 1;
+  text-align: center;
+  border-right: 2px solid #EBDED5;
+  height: 30px;
+  line-height: 30px;
+}
+
+.following_map_category_item h3:nth-child(2) {
+  flex: 2;
+  text-align: center;
+}
+
+.following_map_category_item h3:nth-child(3) {
+  flex: 1;
+  text-align: center;
+}/*# sourceMappingURL=style(yeseul).css.map */

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dd5083d51b9b27b921cd4d640941efd1"></script>
+  <script defer src="/Team.js/detail.js"></script>
+  <script defer src="/Team.js/detail_2_api.js"></script>
+  <script src="https://kit.fontawesome.com/a4ef07a409.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Team_css/style(gaeul).css">
+  <title>detail_2</title>
+</head>
+<body>
+  <div class="container recommendation_detail">
+    <div class="rec_detail_inner">
+      <div class="rec_detail_header thum_2">
+        <!-- <img src="/Team_img/detail_item_thum_2.jpeg" alt=""> -->
+        <div class="rec_header_title">
+          <a href="#" onclick="history.back()"><i class="fa-solid fa-chevron-left"></i></a>
+          <h2>소문러's PICK</h2>
+        </div>
+        <h2 id="header_desc">짙어지는 녹음, 비 오는 날 다녀오기 좋은<br/> 망원동 카페 5곳</h2>
+      </div>
+      <div class="detail_section">
+        <div class="detail_location">
+          <div class="detail_profile">
+            <div class="detail_profile_img">
+              <img src="/Team_img/detail_user_profile_2.jpeg" alt="">
+            </div>
+            <div class="detail_profile_txt">
+              <div id="user_info">
+                <a href="/mobile_html/my_page.html"><h3>아는형님</h3></a>
+                <span>@sunwook</span>
+              </div>
+              <span class="wrting_date">1주 전</span>
+            </div>
+          </div>
+          <div id="map" style="width:390px;height:295px;"></div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <h3 class="detail_cafe_name">이이알티 망원</h3>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 마포구, 망원동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge" id="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_02_01_01.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_01_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_01_03.jpeg" alt="">
+          </div>
+          <div class="detail_desc">
+            <span>밖으로 은은한 조명이 새어나오는 공간 '이이알티 망원' <br/>
+              온기있는 조명을 배경삼아 커피와 차를 <br/>
+              내려주고, 비가 내려 어둑한 거리로 <br/>
+              흘러나오는 빛이 인상적입니다 🌧️<br/>
+            </span>
+          </div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <h3 class="detail_cafe_name">망원 연속체</h3>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 마포구, 망원동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge" id="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_02_02_01.jpeg"  alt="">
+            <img src="/Team_img/detail_item_02_02_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_02_03.jpeg" alt="">
+            <!-- <img src="/Team_img/detail_item_02_02_04.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_02_05.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_02_06.jpeg" alt=""> -->
+          </div>
+          <div class="detail_desc">
+            <span>따뜻한 정서가 흐르는 망원동의 카페겸 바 '망원연속체'💧🎵 <br/>망원동 거리 허름한 건물 계단을 통해 2층으로 <br/> 올라가면 문틈으로 감미로운 재즈가 흘러나온다✨ </span>
+          </div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <h3 class="detail_cafe_name">보통공원</h3>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 마포구, 망원동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge" id="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_02_03_01.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_03_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_03_03.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_03_04.jpeg" alt="">
+          </div>
+          <div class="detail_desc">
+            <span>평범한 일상에서 약간의 편안한 일탈 '보통공원'<br/> 실내로 들어서면 차분한 조명이 마음을 가라앉힌다.<br/> 망원동에서 오랫동안 지낸 사장님이 직접꾸민 공간이여서 그런지 <br/> 공간 곳곳에 묻어있는 망원동 특유의 무드</span>
+          </div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <h3 class="detail_cafe_name">모을</h3>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 마포구, 망원동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge" id="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_02_04_01.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_04_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_04_03.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_04_04.jpeg" alt="">
+          </div>
+          <div class="detail_desc">
+            <span> 오랜만에 방문했던 모을✉️, 흘러나오는 노래소리 대화하는 사람들의 목소리 커피내리는 소리 이 모든 소리가 어우러져 🤭 나에게는 힐링으로 다가온다 오랜만에 느껴보는 느낌 이곳은 여전히 좋다.</span>
+          </div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <h3 class="detail_cafe_name">포스트노빌즈</h3>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 마포구, 망원동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge" id="bookmark"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_02_05_01.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_05_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_05_03.jpeg" alt="">
+            <img src="/Team_img/detail_item_02_05_04.jpeg" alt="">
+          </div>
+          <div class="detail_desc">
+            <span>망원동의 정취를 느끼기 좋은 카페 '포스트 노빌즈' <br/> 카페 앞에 심어져있는 작은 나무들 덕분에 망원동의 여름을 더 가까이서 느낄 수 있고, 심플하면서도 감각적인 인테리어는 머무는 시간동안 온전히 나에게 집중할 수 있도록 해준다🧚‍♂️ </span>
+          </div>
+        </div>
+      </div>
+      <!-- 모달창 -->
+      <div class="detail_share_modal">
+        <div id="detail_modal_title">
+          <h3>공유</h3>
+          <h3 id="detail_modal_close">&times;</h3>
+        </div>
+        <div class="detail_modal_content">
+          <div id="detail_sns_buttons_wrap">
+            <div class="detail_sns_button">
+              <button id="kakaotalkButton"><img src="/Team_img/sns1.svg" alt=""></button>
+              <span>kakaotalk</span>
+            </div>
+            <div class="detail_sns_button">
+              <button id="naverButton"><img src="/Team_img/sns2.svg" alt=""></button>
+              <span>naver</span>
+            </div>
+            <div class="detail_sns_button">
+              <button id="googleButton"><img src="/Team_img/sns3.svg" alt=""></button>
+              <span>google</span>
+            </div>
+          </div>
+          <div class="detail_copy">
+            <input type="text" id="snsUrlInput" readonly>
+            <button id="detail_copy_button">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gnb">
+      <a href="/mobile_html/main.html"><i class="fas fa-house"></i>홈</a>
+      <a href="/mobile_html/search.html"><i class="fa-solid fa-magnifying-glass"></i>검색</a>
+      <a href="/mobile_html/main_map.html"><i class="fa-regular fa-map"></i>지도</a>
+      <a href="/mobile_html/my_map_page.html"><i class="fa-regular fa-bookmark"></i>나의 저장</a>
+      <a href="/mobile_html/my_page.html"><i class="fa-regular fa-user"></i>내 정보</a>
+    </div>
+  </div>  
+</body>
+</html>

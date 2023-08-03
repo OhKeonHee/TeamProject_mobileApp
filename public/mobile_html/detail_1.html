@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9248d936236b9e260b5c595a1fb30906"></script>
+  <script defer src="/Team.js/detail.js"></script>
+  <script defer src="/Team.js/detail_1_api.js"></script>
+  <script src="https://kit.fontawesome.com/a4ef07a409.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Team_css/style(gaeul).css">
+  <title>detail_1</title>
+</head>
+<body>
+  <div class="container recommendation_detail">
+    <div class="rec_detail_inner">
+      <div class="rec_detail_header thum_1">
+        <div class="rec_header_title">
+          <a href="#" onclick="history.back()"><i class="fa-solid fa-chevron-left"></i></a>
+          <h2>소문러's PICK</h2>
+        </div>
+        <h2 id="header_desc">일명 '프토’ 처돌이의 프렌치 토스트 맛집</h2>
+      </div>
+      <div class="detail_section">
+        <div class="detail_location">
+          <div class="detail_profile">
+            <div class="detail_profile_img">
+              <img src="/Team_img/detail_user_profile_1.jpeg" alt="">
+            </div>
+            <div class="detail_profile_txt">
+              <div id="user_info">
+                <a href="/mobile_html/my_page.html"><h3>갈갈이님</h3></a>
+                <span>@kkkingbatnae3</span>
+              </div>
+              <span class="wrting_date">1주 전</span>
+            </div>
+          </div>
+          <div id="map" style="width:390px;height:295px;"></div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <a href="/mobile_html/shopdetail.html"><h3 class="detail_cafe_name">조앤도슨</h3></a>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 마포구, 연남동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge detail_bookmark_btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_01_01_01.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_01_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_01_03.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_01_04.jpeg" alt="">
+          </div>
+          <div class="detail_desc">
+            <span>지금까지 이런 맛은 없었다 🥹. <br/>
+              집에서, 계란물 묻혀서 만든 그 프렌치 토스트를 
+              상상해서는 안된다. <br/>
+              겉바속촉, 단짠단짠의 기가막힌 조합 덕분에 평일 <br/>
+              에도 한시간 웨이팅은 기본이다 .🤎✨
+            </span>
+          </div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <h3 class="detail_cafe_name">비하인드</h3>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 마포구, 서교동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge detail_bookmark_btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_01_02_01.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_02_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_02_03.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_02_04.jpeg" alt="">
+          </div>
+          <div class="detail_desc">
+            <span>상수역 근처 작고 조용한 카페, <br/> 퇴근하고 노트북 들고 작업하면서 프렌치토스트 <br/> 한접시 하고 가면 당충전 제대로거든요✨ </span>
+          </div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <h3 class="detail_cafe_name">토스티데이즈</h3>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 용산구, 용산동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge detail_bookmark_btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_01_03_01.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_03_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_03_03.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_03_04.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_03_05.jpeg" alt="">
+          </div>
+          <div class="detail_desc">
+            <span>프렌치토스트를 많이 먹어보진 않았는데 겉은 달달한데 속은 폭신폭신하고 <br/> 달걀맛이 진하게 나요! 커피를 좋아하시는 분이라면 커피만 마셔도<br/> 좋을 것 같아요! 둘다 너무너무 맛있었어요!</span>
+          </div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <h3 class="detail_cafe_name">프렌치 망원</h3>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 마포구, 망원동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge detail_bookmark_btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_01_04_01.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_04_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_04_03.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_04_04.jpeg" alt="">
+
+          </div>
+          <div class="detail_desc">
+            <span>망원동에 있는 수 많은 카페들 중에, 시간 내서 방문하기를 참 잘했다고 생각되는 곳이에요!🤭 폭신 폭신한 빵으로 만든 프렌치 토스트는 <br/> 재료를 아낌 없이 쓰신다는 생각이 들어서 보기만 해도 배부른 느낌입니다💗 토스트 종류가 여럿 있던데, 다음에는 다른 걸로 먹어보고 싶네요.</span>
+          </div>
+        </div>
+        <div class="detail_cafe_content">
+          <div class="detail_place">
+            <div class="detail_placeInfo">
+              <h3 class="detail_cafe_name">푸쉬오프 커피앤 바</h3>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 마포구, 서교동</span>
+            </div>
+            <div class="detail_place_badge_wrap">
+              <button class="detail_badge detail_share_btn"><i class="fa-regular fa-share-from-square"></i></button>
+              <button class="detail_badge detail_bookmark_btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="detail_thum_slide">
+            <img src="/Team_img/detail_item_01_05_01.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_05_02.jpeg" alt="">
+            <img src="/Team_img/detail_item_01_05_03.jpeg" alt="">
+            <!-- <img src="/Team_img/detail_item_01_05_04.jpeg" alt=""> -->
+          </div>
+          <div class="detail_desc">
+            <span>첫 방문 때도 프렌치토스트 먹어보고 싶었어서 다시 방문해서 먹었어요! 생각보다 크기가 커서 놀랐고 아이스크림과 촉촉한 프렌치 토스트에 카라멜 소스, 시나몬가루 조합이 환상임,, 다들 프렌치 토스트 꼭 먹어보세요🤎👍🏻 <br/> 분위기는 언제가도 좋네요. 선곡최고임돠! </span>
+          </div>
+        </div>
+      <!-- 모달창 -->
+      <div class="detail_share_modal">
+        <div id="detail_modal_title">
+          <h3>공유</h3>
+          <h3 id="detail_modal_close">&times;</h3>
+        </div>
+        <div class="detail_modal_content">
+          <div id="detail_sns_buttons_wrap">
+            <div class="detail_sns_button">
+              <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fcategory%3D25#login"><img src="/Team_img/sns1.svg" alt=""></a>
+              <span>kakaotalk</span>
+            </div>
+            <div class="detail_sns_button">
+              <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"><img src="/Team_img/sns2.svg" alt=""></a>
+              <span>naver</span>
+            </div>
+            <div class="detail_sns_button">
+              <a href="https://accounts.google.com/InteractiveLogin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Dko%26sa%3DX%26ved%3D0ahUKEwievrqBq8__AhVJUd4KHVP-AWQQPAgI&ec=GAZAmgQ&hl=ko&passive=true&ifkv=Af_xneHj_BCK2Xhhn4b9kkz4p7bS78kW3MggdfJ0AdildU5hWGYPKQ4A8ezt1tSxc0wSZ5xf27jpnw&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="/Team_img/sns3.svg" alt=""></a>
+              <span>google</span>
+            </div>
+          </div>
+          <div class="detail_copy">
+            <p id="snsUrlInput"></p>
+            <button id="detail_copy_button">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gnb">
+    <a href="/mobile_html/main.html"><i class="fas fa-house"></i>홈</a>
+    <a href="/mobile_html/search.html"><i class="fa-solid fa-magnifying-glass"></i>검색</a>
+    <a href="/mobile_html/main_map.html"><i class="fa-regular fa-map"></i>지도</a>
+    <a href="/mobile_html/my_map_page.html"><i class="fa-regular fa-bookmark"></i>나의 저장</a>
+    <a href="/mobile_html/my_page.html"><i class="fa-regular fa-user"></i>내 정보</a>
+  </div>
+</body>
+</html>

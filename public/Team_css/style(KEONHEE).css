@@ -1,0 +1,878 @@
+@charset "UTF-8";
+/* Font */
+/* 평창평화체 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@font-face {
+  font-family: "PyeongChangPeace-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 프리텐다드 */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+/* Noto Sans (en) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+/* Heading Font Size */
+h1 {
+  font-size: 40px;
+  font-family: "PyeongChangPeace-Bold";
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Pretendard-Regular";
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-family: "Pretendard-Regular";
+}
+
+span {
+  font-size: 12px;
+  font-family: "Pretendard-Regular";
+}
+
+/* color */
+/* text-color */
+/* Mixin */
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  width: 24.5rem;
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1px; /* 스크롤바의 너비 */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* gnb css start */
+.gnb {
+  border-top: 1px solid #999999;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 390px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+.gnb a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pretendard-Regular";
+  font-size: 12px;
+}
+.gnb a i {
+  font-size: 24px;
+  color: #4c3525;
+  margin-bottom: 5px;
+}
+
+/* gnb css end */
+/* ##### signup.html START ##### */
+.container.nickname {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  padding-bottom: 900px;
+}
+.container.nickname .userImage {
+  padding: 20px;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+.container.nickname .userImage .userImage_box #userImage_select {
+  position: relative;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #999999;
+}
+.container.nickname .userImage .userImage_box #userImage_select img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+.container.nickname .userImage .userImage_box .plus i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: #FFFFFF;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.container.nickname .userImage .userImage_box input {
+  display: none;
+}
+.container.nickname .nickname {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.container.nickname .nickname input {
+  font-family: "Pretendard-Regular";
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #999999;
+  margin: 1rem 0;
+}
+.container.nickname .nickname .error {
+  color: red;
+  font-size: 12px;
+  padding-left: 10px;
+  display: none;
+}
+.container.nickname .birth {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.container.nickname .birth .birth_select {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  padding: 0 20px;
+}
+.container.nickname .birth .birth_select select {
+  font-family: "Pretendard-Regular";
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 1px solid #999999;
+  outline: none;
+}
+.container.nickname .gender {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0;
+}
+.container.nickname .gender #gender {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0 20px;
+}
+.container.nickname .gender #gender .man label,
+.container.nickname .gender #gender .woman label {
+  margin-right: 10px;
+}
+.container.nickname button {
+  cursor: pointer;
+  width: 80%;
+  font-family: "Pretendard-ExtraBold";
+  font-size: 20px;
+  background-color: #4c3525;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 0;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* signup.html END */
+/* ##### RE_profile.html START ##### */
+.container.RE_profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  padding-bottom: 500px;
+}
+.container.RE_profile .RE_profile_header {
+  width: 390px;
+  height: 76px;
+  line-height: 76px;
+  display: flex;
+  border-bottom: 1px solid #999999;
+}
+.container.RE_profile .RE_profile_header h2 {
+  width: 130px;
+  text-align: center;
+  color: #4c3525;
+}
+.container.RE_profile .RE_profile_header h2 i {
+  transform: translateX(-20px);
+}
+.container.RE_profile .userImage {
+  padding: 20px;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+.container.RE_profile .userImage .userImage_box #userImage_select {
+  position: relative;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #999999;
+}
+.container.RE_profile .userImage .userImage_box #userImage_select img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+.container.RE_profile .userImage .userImage_box .plus i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.container.RE_profile .userImage .userImage_box input {
+  display: none;
+}
+.container.RE_profile .nickname {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.container.RE_profile .nickname input {
+  font-family: "Pretendard-Regular";
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #999999;
+  margin: 1rem 0;
+}
+.container.RE_profile .nickname .error {
+  color: red;
+  font-size: 12px;
+  padding-left: 10px;
+  display: none;
+  padding-bottom: 10px;
+}
+.container.RE_profile .nickname #nickname_re_txt {
+  font-size: 12px;
+  padding-left: 10px;
+}
+.container.RE_profile button {
+  cursor: pointer;
+  width: 50%;
+  font-family: "Pretendard-ExtraBold";
+  font-size: 20px;
+  background-color: #4c3525;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 0;
+  border-radius: 30px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* RE_profile.html END */
+/* ##### Search.html START ##### */
+.search {
+  padding: 20px 10px;
+}
+.search .filter_search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.search .filter_search .filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5%;
+}
+.search .filter_search .filter select {
+  font-family: "Pretendard-Regular";
+  border: none;
+  border-bottom: 1px solid #999999;
+  width: 30%;
+  padding: 5px;
+  outline: none;
+}
+.search .filter_search .filter #person_filter {
+  width: 25%;
+}
+.search .filter_search a {
+  padding-right: 5%;
+}
+.search .filter_search a i {
+  font-size: 18px;
+}
+.search .recent_search_area,
+.search .custom_search_area {
+  padding: 10px;
+}
+.search .recent_search_area h2,
+.search .custom_search_area h2 {
+  margin-bottom: 10px;
+}
+.search .recent_search_area .recent_search,
+.search .recent_search_area .custom_search,
+.search .custom_search_area .recent_search,
+.search .custom_search_area .custom_search {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.search .recent_search_area .recent_search span,
+.search .recent_search_area .custom_search span,
+.search .custom_search_area .recent_search span,
+.search .custom_search_area .custom_search span {
+  background-color: #777777;
+  color: #FFFFFF;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 10px;
+}
+.search .other_map_area {
+  width: inherit;
+  height: 150px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/Team_img/search_map.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+.search .other_map_area .other_map_txt {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #FFFFFF;
+}
+.search .rising_search_area {
+  margin: 10px 0;
+  padding: 10px;
+  padding-bottom: 65px;
+}
+.search .rising_search_area .rising_search_list {
+  background-color: #F5F5F5;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Search.html END */
+/* ##### Community.html START ##### */
+.community header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #999999;
+}
+.community header a {
+  margin-right: 10px;
+}
+.community .post_area {
+  display: flex;
+  flex-direction: column;
+}
+.community .post_area .post {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  gap: 5%;
+  border-bottom: 1px solid #999999;
+}
+.community .post_area .post #userImage {
+  width: 30px;
+  height: 30px;
+}
+.community .post_area .post #userImage img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+.community .post_area .post .post_right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.community .post_area .post .post_right #userName {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.community .post_area .post .post_right #post_txt {
+  cursor: pointer;
+}
+.community .post_area .post .post_right #reply_btn {
+  display: flex;
+  margin: 20px 0;
+  margin-bottom: 5px;
+  border: none;
+  background-color: transparent;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.community .post_area .post .post_right #reply_btn i {
+  font-size: 12px;
+}
+.community .post_area .post .post_right #reply_btn span {
+  transform: translateY(-2px);
+}
+.community .post_area .post .post_icon {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+}
+.community .post_area .post .post_icon i {
+  font-size: 12px;
+  transform: translateY(1px);
+}
+
+#community_post .post_area .post {
+  padding-bottom: 80px;
+  border-bottom: none;
+}
+#community_post .post_area .post #userName {
+  margin: 0;
+}
+#community_post .post_area .post #post_txt {
+  padding: 20px 0;
+  display: block;
+}
+#community_post .post_area .post_btn {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#community_post .post_area .post_btn button {
+  flex: 1;
+  background-color: transparent;
+  border: 1px solid #999999;
+  border-right: none;
+  border-left: none;
+  font-family: "Pretendard-Regular";
+  padding: 10px 0;
+  cursor: pointer;
+}
+#community_post .post_area .post_btn .heart_color {
+  color: crimson;
+}
+#community_post .post_area .reply_txt .post {
+  border-bottom: 1px solid #999999;
+  padding-bottom: 20px;
+}
+#community_post .post_area .reply_txt .post_icon {
+  right: 5%;
+}
+#community_post .post_area .reply_area {
+  position: fixed;
+  bottom: 0;
+  width: 24rem;
+  display: flex;
+  border-top: 1px solid #F5F5F5;
+  padding: 10px 20px 20px 20px;
+}
+#community_post .post_area .reply_area input {
+  flex: 7;
+  border-radius: 20px;
+  background-color: #F5F5F5;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Pretendard-Regular";
+  outline: none;
+}
+#community_post .post_area .reply_area button {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#community_post .post_area #heart_div {
+  background-color: #4c3525;
+  position: fixed;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  top: -10%;
+}
+#community_post .post_area #heart_div span {
+  color: #FFFFFF;
+  font-weight: 200;
+}
+#community_post .post_area #heart_div a {
+  transform: translateY(-10%);
+}
+#community_post .post_area #heart_div a span {
+  color: #FF5C00;
+  font-weight: bold;
+  font-size: 13px;
+}
+#community_post .post_area #reply_err_div {
+  background-color: #4c3525;
+  position: fixed;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  top: -10%;
+}
+#community_post .post_area #reply_err_div span {
+  color: #FFFFFF;
+  font-weight: 200;
+}
+#community_post .post_area #login_err_div {
+  background-color: #4c3525;
+  position: fixed;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  top: -10%;
+}
+#community_post .post_area #login_err_div span {
+  color: #FFFFFF;
+  font-weight: 200;
+}
+
+.heart_div_ani {
+  animation: heart_div 5s both ease-in-out;
+}
+
+@keyframes heart_div {
+  0% {
+    top: -20%;
+  }
+  5% {
+    top: 3%;
+  }
+  25% {
+    top: 3%;
+  }
+  50% {
+    top: 3%;
+  }
+  100% {
+    top: -10%;
+  }
+}
+/* ##### map.html ##### */
+.map_img {
+  border: 1px solid red;
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+
+.map_img img {
+  width: 23.5rem;
+  position: relative;
+}
+
+.map_img > button {
+  position: absolute;
+  z-index: 999;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+}
+
+.map_img > button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.map_img #Jongro {
+  top: 30px;
+  left: 145px;
+  width: 40px;
+  height: 50px;
+  transform: rotate(10deg);
+}
+
+.map_img #Gangbuk {
+  top: 20px;
+  left: 255px;
+  width: 42px;
+  height: 50px;
+  transform: rotate(-10deg);
+}
+
+.map_img #Nowon {
+  top: 10px;
+  left: 305px;
+  width: 40px;
+  height: 70px;
+  transform: rotate(-10deg);
+}
+
+.map_img #Eunpyeong {
+  top: 10px;
+  left: 97px;
+  width: 40px;
+  height: 65px;
+  transform: rotate(12deg);
+}
+
+.map_img #Gwanghwamun {
+  top: 92px;
+  left: 140px;
+  width: 70px;
+  height: 40px;
+  transform: rotate(10deg);
+}
+
+.map_img #Daehakro {
+  top: 10px;
+  left: 195px;
+  width: 45px;
+  height: 40px;
+}
+
+.map_img #Hongdae {
+  top: 130px;
+  left: 90px;
+  width: 55px;
+  height: 35px;
+  transform: rotate(10deg);
+}
+
+.map_img #Sinchon {
+  top: 80px;
+  left: 70px;
+  width: 60px;
+  height: 40px;
+  transform: rotate(10deg);
+}
+
+.map_img #Junggu {
+  top: 100px;
+  left: 218px;
+  width: 35px;
+  height: 77px;
+}
+
+.map_img #Sangsu {
+  top: 170px;
+  left: 75px;
+  width: 63px;
+  height: 33px;
+  transform: rotate(10deg);
+}
+
+.map_img #Myeongdong {
+  top: 138px;
+  left: 150px;
+  width: 40px;
+  height: 40px;
+}
+
+.map_img #Jungnang {
+  top: 85px;
+  left: 315px;
+  width: 40px;
+  height: 60px;
+  transform: rotate(-9deg);
+}
+
+.map_img #Dongdaemun {
+  top: 80px;
+  left: 255px;
+  width: 50px;
+  height: 45px;
+  transform: rotate(-7deg);
+}
+
+.map_img #Kondae {
+  top: 130px;
+  left: 263px;
+  width: 50px;
+  height: 40px;
+  transform: rotate(-10deg);
+}
+
+.map_img #Mapo {
+  top: 120px;
+  left: 30px;
+  width: 50px;
+  height: 47px;
+  transform: rotate(14deg);
+}
+
+.map_img #Yongsan {
+  top: 183px;
+  left: 145px;
+  width: 52px;
+  height: 38px;
+}
+
+.map_img #Itaewon {
+  top: 187px;
+  left: 205px;
+  width: 55px;
+  height: 30px;
+  transform: rotate(-20deg);
+  border-radius: 30px;
+}
+
+.map_img #Samcheongdong {
+  top: 60px;
+  left: 190px;
+  width: 50px;
+  height: 33px;
+  transform: rotate(5deg);
+}
+
+.map_img #Gangseo {
+  top: 193px;
+  left: 17px;
+  width: 45px;
+  height: 60px;
+}
+
+.map_img #Dongjag {
+  top: 250px;
+  left: 120px;
+  width: 48px;
+  height: 50px;
+  transform: rotate(15deg);
+}
+
+.map_img #Garosugil {
+  top: 245px;
+  left: 210px;
+  width: 55px;
+  height: 35px;
+  transform: rotate(-20deg);
+}
+
+.map_img #Gangdong {
+  top: 170px;
+  left: 310px;
+  width: 55px;
+  height: 40px;
+}
+
+.map_img #Yeongdeungpo {
+  top: 227px;
+  left: 67px;
+  width: 52px;
+  height: 45px;
+  transform: rotate(30deg);
+}
+
+.map_img #Seocho {
+  top: 263px;
+  left: 173px;
+  width: 35px;
+  height: 68px;
+}
+
+.map_img #Gangnam_station {
+  top: 285px;
+  left: 215px;
+  width: 60px;
+  height: 35px;
+  transform: rotate(-20deg);
+}
+
+.map_img #Songpa {
+  top: 210px;
+  left: 320px;
+  width: 35px;
+  height: 60px;
+  transform: rotate(-27deg);
+  border-radius: 10px 40px 10px 10px;
+}
+
+.map_img #Guro {
+  top: 260px;
+  left: 30px;
+  width: 57px;
+  height: 45px;
+  border-radius: 10px 80px 10px 10px;
+}
+
+.map_img #Gwanag {
+  top: 302px;
+  left: 90px;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px 30px 10px 10px;
+}
+
+.map_img #Gangnamgu {
+  top: 226px;
+  left: 273px;
+  width: 43px;
+  height: 68px;
+  transform: rotate(-20deg);
+}
+
+/* Community.html END *//*# sourceMappingURL=style(KEONHEE).css.map */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9248d936236b9e260b5c595a1fb30906&libraries=services"></script>
+  <script defer src="/Team.js/my_map_api.js"></script>
+  <script src="https://kit.fontawesome.com/a4ef07a409.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Team_css/style(gaeul).css">
+</head>
+<body style="height: 100vh; overflow: hidden;">
+  <!-- <div class="my_map_api_title">
+    <h3>저장한 공간</h3>
+    <button id="map_deleteBtn"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div id="map" style="width:390px;height:600px;"></div> -->
+
+  <div class="my_map_api_header">
+    <div class="btn btn_prev">
+      <a href="#" onclick="history.back()">
+      <h2><i class="fas fa-angle-left"></i></h2></a>
+    </div>
+    <div class="my_map_api_title">
+      <h2>지도</h2>
+    </div>
+  </div>
+  <div class="map_wrap">
+    <div id="map" style="width:100%;height:100vh;position:relative;overflow:hidden;"></div>
+
+    <div id="menu_wrap" class="bg_white">
+        <div class="option">
+            <div>
+                <form onsubmit="searchPlaces(); return false;">
+                    키워드 : <input type="text" value="종로 카페" id="keyword" size="15"> 
+                    <button type="submit">검색하기</button> 
+                </form>
+            </div>
+        </div>
+        <hr>
+        <ul id="placesList"></ul>
+        <div id="pagination"></div>
+    </div>
+</div>
+</body>
+</html>

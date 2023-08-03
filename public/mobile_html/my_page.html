@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="https://kit.fontawesome.com/79e902675f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Team_css/style(yeseul).css">
+  <script defer src="/Team.js/main.js"></script>
+  <script defer src="/Team.js/my_page.js"></script>
+</head>
+<body>
+  <!--마이 페이지-카테고리-->
+  <div class="container my_page">
+    <div class="my_page_header">
+      <div class="btn btn_prev">
+        <a href="#" onclick="history.back()">
+        <h2><i class="fas fa-angle-left"></i></h2></a>
+      </div>
+      <div class="my_page_title">
+        <h2>마이 페이지</h2>
+      </div>
+    </div>
+    <div class="user_info">
+      <div class="user_profile_img">
+        <img src="/Team_img/preloading.png" alt="profileimg">
+      </div>
+      <div class="user_info_contents">
+        <div class="nickname"><h2 id="nickname"></h2> 님</div>
+        <div class="user-summary">
+          <div class="review">
+            <span><a href="#">팔로워 0</a></span>
+            <span><a href="#">팔로잉 3</a></span>
+          </div>
+        </div>
+        <div class="profile_edit">
+          <a href="/mobile_html/RE_profile.html"><span>프로필 수정</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="title">
+      <h3 id="daylog_title">데이로그 (4)</h3>
+      <h3 id="comment_title">코멘트 (2)</h3>
+    </div>
+    <div class="mypage_daylog">
+      <div id ="line1"></div>
+      <div class="select_option">
+        <div>
+          <button class="subhead" id="btn_img"><i class="fa-regular fa-images"></i> 이미지</button>
+          <button class="subhead" id="btn_timeline"><i class="fa-regular fa-calendar"></i> 타임라인</button>
+        </div>
+        <!-- <a href="#" id="map"><i class="fa-regular fa-map"></i> 지도로 보기</ㅁ> -->
+      </div>
+      <div class="select_img">
+        <div class="imgpage">
+          <h3>내가 방문한 공간을 기록해보세요</h3>
+          <button id="first_review">첫 데이로그 남기기</button>
+        </div>
+      </div>
+      <div class="select_timeline">
+        <div class="timelinepage">
+          <div id="timeline"></div>
+          <div class="visited_place_wrap">
+            <div class="visited_place_contents">
+              <span class="date">2023년 6월 28일(수)</span>
+              <div class="time_circle1"></div>
+              <div class="visited_place_content">
+                <div class="whichCafe"><i class="fa-solid fa-location-dot"></i><p>워커파크 웨스트</p>
+                </div>
+                <span class="location">서울, 강서구</span>
+              </div>
+              <div class="visited_place_content">
+                <div class="whichCafe"><i class="fa-solid fa-location-dot"></i><p>카페 산아래</p></div>
+                <span class="location">서울, 강북구</span>
+              </div>
+            </div>
+            <div class="visited_place_contents">
+              <span class="date">2023년 5월 27일(화)</span>
+              <div class="time_circle2"></div>
+              <div class="visited_place_content">
+                <div class="whichCafe" onclick="location.href ='/mobile_html/shopdetail.html'"><i class="fa-solid fa-location-dot"></i><p>조앤도슨</p></div>
+                <span class="location">서울, 마포구</span>
+              </div>
+              <div class="visited_place_content">
+                <div class="whichCafe"><i class="fa-solid fa-location-dot"></i><p>기쁜소식</p></div>
+                <span class="location">서울, 성북구</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mypage_comment">
+      <div id="line2"></div>
+      <div class="post_area">
+        <div class="post" id="post1">
+          <div id="userImage">
+            <img src="/Team_img/post_userImage_1.jpg" alt="">
+          </div>
+          <div class="post_right">
+            <h3 id="userName">스폰지밥</h3>
+            <a href="/mobile_html/community_post/post1.html"><span id="post_txt">망원동, 넌슬립 카페 디저트랑 커피 진짜 맛있어요 ...<br/> 꼭 가보세요... </span></a>
+            <div id="post_footer">
+              <span id="post_time">3시간 전</span>
+              <a href="/mobile_html/community_post/post1.html" id="reply_btn"><i class="fa-regular fa-message"></i><span class="reply_btn_txt">댓글달기</span></a>
+            </div>
+          </div>
+          <div class="post_icon">
+            <span><i class="fa-regular fa-thumbs-up"></i> 3</span>
+            <span><i class="fa-regular fa-message"></i> 4</span>
+            <span><i class="fa-regular fa-heart"></i> 6</span>
+          </div>
+        </div>
+        <div class="post" id="post2">
+          <div id="userImage">
+            <img src="/Team_img/post_userImage_3.jpg" alt="">
+          </div>
+          <div class="post_right">
+            <h3 id="userName">99대장 나선욱</h3>
+            <a href="#"><span id="post_txt">소정이랑 좋은 자리, 좋은 시간 보낼 수 있는 곳 추천받는다. 얘들아</span></a>
+            <div id="post_footer">
+              <span id="post_time">1일 전</span>
+              <a href="#" id="reply_btn"><i class="fa-regular fa-message"></i><span class="reply_btn_txt">댓글달기</span></a>
+            </div>
+          </div>
+          <div class="post_icon">
+            <span><i class="fa-regular fa-thumbs-up"></i> 3</span>
+            <span><i class="fa-regular fa-message"></i> 4</span>
+            <span><i class="fa-regular fa-heart"></i> 6</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="error_noLogin">
+    <h2>마이페이지는<br>로그인 후 보실 수 있습니다.</h2>
+    <hr>
+    <div>
+      <a href="/mobile_html/main.html" id="ok">확인</a>
+      <a href="/mobile_html/signin.html" id="gotologin">로그인 하기</a>
+    </div>
+    <div class="error_black"></div>
+  </div>
+  <div class="gnb">
+    <a href="/mobile_html/main.html"><i class="fas fa-house"></i>홈</a>
+    <a href="/mobile_html/search.html"><i class="fa-solid fa-magnifying-glass"></i>검색</a>
+    <a href="/mobile_html/main_map.html"><i class="fa-regular fa-map"></i>지도</a>
+    <a href="/mobile_html/my_map_page.html"><i class="fa-regular fa-bookmark"></i>나의 저장</a>
+    <a href="/mobile_html/my_page.html"><i class="fa-regular fa-user"></i>내 정보</a>
+  </div>
+</body>
+</html>

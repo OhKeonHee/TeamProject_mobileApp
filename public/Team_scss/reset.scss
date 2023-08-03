@@ -1,0 +1,92 @@
+/* Font */
+
+/* 평창평화체 */
+@font-face {
+  font-family: 'PyeongChangPeace-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+/* 프리텐다드 */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+/* Noto Sans (en) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+// font-family: 'Noto Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+
+/* Heading Font Size */
+h1 {
+  font-size: 40px;
+  font-family: 'PyeongChangPeace-Bold';
+}
+h2 {
+  font-size: 20px;
+  font-family: 'Pretendard-Regular';
+  font-weight: bold;
+}
+h3 {
+  font-size: 16px;
+  font-family: 'Pretendard-Regular';
+}
+span {
+  font-size: 12px;
+  font-family: 'Pretendard-Regular';
+}
+
+/* color */
+$beige: #FFFBF2;
+$darkbeige: #F9EBC7;
+$darkbrown: #4c3525;
+$lightgray: #F5F5F5;
+$lightbrown: #BB9174;
+$lightwood: #EBDED5;
+/* text-color */
+$snow: #FFFFFF;
+$gray1: #333333;
+$gray2: #555555;
+$gray3: #777777;
+$gray4: #999999;
+$orange: #FF5C00;
+
+
+/* Mixin */
+@mixin default {
+  width: 24.5rem;
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+@mixin tablet {
+  @media (min-width: 480px) and (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}

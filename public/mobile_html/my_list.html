@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="/Team.js/my_list.js"></script>
+  <script defer src="https://kit.fontawesome.com/79e902675f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Team_css/style(gaeul).css">
+</head>
+<body>
+  <div class="container my_list">
+    <div class="my_list_header">
+      <a href="/mobile_html/my_map_page.html"><i class="fas fa-angle-left"></i></a>
+      <h3>저장한 공간</h3>
+      <button class="list_edit">편집</button>
+    </div>
+    <div class="my_list_wrap">
+      <div class="list_item">
+        <a href="/mobile_html/detail_1.html"><img src="/Team_img/detail_item_01_01.jpeg" alt=""></a>
+        <span class="cafeList">일명 '프토’ 처돌이의<br/> 프렌치 토스트 맛집</span>
+      </div>
+      <div class="list_item">
+        <a href="/mobile_html/detail_2.html"><img src="/Team_img/rec_item_06.jpeg" alt="샘플이미지"></a>
+        <span class="cafeList">짙어지는 녹음,<br/>  비오는 날 다녀오기 좋은<br/>  망원동 카페 5곳</span>
+      </div>
+    </div>
+    <button class="new_list">+ 새롭게 만들기</button>
+  </div>
+  <div class="new_list_content">
+    <div class="list_header">
+      <h2>새 리스트</h2>
+      <button id="list_deleteBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="list_box">
+      <input type="text" placeholder="리스트 이름을 입력해주세요 (최대 20자)">
+      <input type="text" placeholder="설명을 간단히 입력해주세요 ">
+      <button>확인</button>
+    </div>
+  </div>  
+  <div class="gnb">
+    <a href="/mobile_html/main.html"><i class="fas fa-house"></i>홈</a>
+    <a href="/mobile_html/search.html"><i class="fa-solid fa-magnifying-glass"></i>검색</a>
+    <a href="/mobile_html/main_map.html"><i class="fa-regular fa-map"></i>지도</a>
+    <a href="/mobile_html/my_map_page.html"><i class="fa-regular fa-bookmark"></i>나의 저장</a>
+    <a href="/mobile_html/my_page.html"><i class="fa-regular fa-user"></i>내 정보</a>
+  </div>
+</body>
+</html>

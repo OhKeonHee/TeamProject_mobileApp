@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/79e902675f.js" crossorigin="anonymous"></script>
+  <!--Custom CSS & JS-->
+  <script defer src="/Team.js/main.js"></script>
+  <link rel="stylesheet" href="/Team_css/style(KEONHEE).css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container search">
+    <div class="filter_search">
+      <div class="filter">
+        <select id="place_filter">
+          <option id="default">지역</option>
+          <option>은평 / 서대문</option>
+          <option>종로</option>
+          <option>대학로</option>
+          <option>삼청동</option>
+          <option>강북 / 성북</option>
+          <option>노원 / 도봉 / 의정부</option>
+          <option>중랑 / 광진</option>
+          <option>동대문 / 성동</option>
+          <option>중구</option>
+          <option>건대</option>
+          <option>이태원</option>
+          <option>광화문 / 인사동</option>
+          <option>명동</option>
+          <option>용산</option>
+          <option>신촌</option>
+          <option>홍대 - 연남</option>
+          <option>상수 - 합정</option>
+          <option>마포</option>
+          <option>강서 / 양천 / 김포</option>
+          <option>영등포</option>
+          <option>구로 - 금천</option>
+          <option>관악</option>
+          <option>동작</option>
+          <option>서초</option>
+          <option>가로수길</option>
+          <option>강남역</option>
+          <option>강남구</option>
+          <option>송파</option>
+          <option>강동 / 하남</option>
+        </select>
+        <select id="person_filter">
+          <option id="default">인원 수</option>
+          <option>1명</option>
+          <option>2명</option>
+          <option>3명</option>
+          <option>4명</option>
+          <option>5명</option>
+          <option>6명</option>
+          <option>단체</option>
+        </select>
+        <select id="hash_filter">
+          <option id="default"># ---</option>
+          <option>#조용한</option>
+          <option>#공부하기 좋은</option>
+          <option>#콘센트</option>
+          <option>#소개팅</option>
+          <option>#디저트</option>
+          <option>#카공</option>
+          <option>#데이트</option>
+          <option>#사진맛집</option>
+          <option>#사진명소</option>
+          <option>#핫플</option>
+          <option>#아늑한</option>
+          <option>#대화</option>
+          <option>#편한좌석</option>
+          <option>#주차가능</option>
+          <option>#노키즈존</option>
+          <option>#노시니어존</option>
+          <option>#베이커리</option>
+          <option>#비건</option>
+          <option>#넓은</option>
+          <option>#친환경</option>
+          <option>#테라스</option>
+          <option>#지하철역과 가까운</option>
+          <option>#책</option>
+          <option>#케이크</option>
+          <option>#달달한</option>
+          <option>#클럽</option>
+        </select>
+      </div>
+      <a href="#">
+        <i class="fas fa-sliders"></i>
+      </a>
+    </div>
+    <div class="recent_search_area">
+      <h2>최근 검색어</h2>
+      <div class="recent_search">
+        <span id="search_txt">#디저트</span>
+        <span id="search_txt">이태원</span>
+        <span id="search_txt">#베이커리</span>
+        <span id="search_txt">#데이트</span>
+        <span id="search_txt">동대문 / 성동</span>
+        <span id="search_txt">용산</span>
+      </div>
+    </div>
+    <div class="custom_search_area">
+      <h2>맞춤 검색어</h2>
+      <div class="custom_search">
+        <span id="search_txt">#편한좌석</span>
+        <span id="search_txt">#사진명소</span>
+        <span id="search_txt">#대화</span>
+        <span id="search_txt">#핫플</span>
+        <span id="search_txt">#테라스</span>
+        <span id="search_txt">#달달한</span>
+        <span id="search_txt">상수 - 합정</span>
+        <span id="search_txt">홍대 - 연남</span>
+      </div>
+    </div>
+    <div class="other_map_area">
+      <a class="other_map_txt" href="#">
+        <h3>소문러들의 맛집 지도 궁금해?</h3>
+        <h2>다른 사람 지도 구경하기 <i class="fas fa-arrow-right"></i></h2>
+      </a>
+    </div>
+    <div class="rising_search_area">
+      <h2>급상승 검색어</h2>
+      <div class="rising_search_list">
+        <h3>1. #공부하기 좋은</h3>
+        <h3>2. #조용한</h3>
+        <h3>3. #콘센트</h3>
+        <h3>4. #소개팅</h3>
+        <h3>5. #디저트</h3>
+        <h3>6. #카공</h3>
+        <h3>7. #데이트</h3>
+        <h3>8. #사진맛집</h3>
+        <h3>9. #핫플</h3>
+        <h3>10. #달달한</h3>
+      </div>
+    </div>
+  </div>
+  <div class="gnb" style="background-color: white; border-top: 1px solid #999999;">
+    <a href="/mobile_html/main.html"style="color: #4c3525;"><i class="fas fa-house"></i>홈</a>
+    <a href="/mobile_html/search.html" style="color: #4c3525;"><i class="fa-solid fa-magnifying-glass"></i>검색</a>
+    <a href="/mobile_html/main_map.html" style="color: #4c3525;"><i class="fa-regular fa-map"></i>지도</a>
+    <a href="/mobile_html/my_map_page.html" style="color: #4c3525;"><i class="fa-regular fa-bookmark"></i>나의 저장</a>
+    <a href="/mobile_html/my_page.html" style="color: #4c3525;"><i class="fa-regular fa-user"></i>내 정보</a>
+  </div>
+</body>
+</html>

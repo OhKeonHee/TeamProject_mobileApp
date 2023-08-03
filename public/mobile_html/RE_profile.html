@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="/Team.js/RE_profile.js"></script>
+  <link rel="stylesheet" href="/Team_css/style(KEONHEE).css">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/79e902675f.js" crossorigin="anonymous"></script>
+  <title>프로필 수정</title>
+</head>
+<body>
+  <div class="container RE_profile">
+    <div class="RE_profile_header">
+      <div class="btn btn_prev">
+        <a href="#" onclick="history.back()">
+        <h2><i class="fas fa-angle-left"></i></h2></a>
+      </div>
+      <div class="RE_profile_title">
+        <h2>프로필 수정</h2>
+      </div>
+    </div>
+    <div class="nickname_form">
+      <div class="userImage">
+        <div class="userImage_box">
+          <label for="userImage_select">대표 이미지 변경</label>
+          <div id="userImage_select">
+            <!-- 이미지 보여주는 곳 -->
+            <label for="image_select" class="plus"><i class="fas fa-plus"></i></label>
+          </div>
+          <input type="file" id="image_select" accept="image/*" onchange="setThumbnail(event);">
+        </div>
+      </div>
+      <div class="nickname">
+        <label for="nickname_input">닉네임 변경 *</label>
+        <input type="text" placeholder="15자 이내 영문, 한글로 입력해주세요." id="nickname_input">
+        <p id="nickname_error" class="error">* 닉네임을 입력하지 않았습니다.</p>
+        <p id="nickname_re_txt">⛔ 닉네임은 변경 후 한달동안 변경하실 수 없습니다.</p>
+      </div>
+    </div>
+    <div class="nickname_btn">
+      <a href="/mobile_html/my_page.html"><button class="nickname_submit">
+        프로필 수정하기
+      </button></a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9248d936236b9e260b5c595a1fb30906&libraries=services"></script>
+  <script defer src="/Team.js/main_map.js"></script>
+  <script defer src="/Team.js/main_map_api.js"></script>
+
+  <script src="https://kit.fontawesome.com/a4ef07a409.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Team_css/style(gaeul).css">
+  <title>map</title>
+</head>
+<body>
+  <div class="container main_map">
+    <div class="main_map_header">
+      <div class="btn btn_prev">
+        <a href="#" onclick="history.back()">
+        <h2><i class="fas fa-angle-left"></i></h2></a>
+      </div>
+      <div class="my_page_title">
+        <h2>주변 가게</h2>
+      </div>
+    </div>
+    <div id="map" style="width:390px;height:100vh;"></div>
+    <button id="angleUp"><i class="fa-solid fa-angle-up"></i></button>
+    <div class="main_map_inner">
+      <button id="angleDown"><i class="fa-solid fa-angle-down"></i></button>
+      <div class="map_menu">
+        <div class="map_badge">
+          <button class="badge" id="badge_short">거리순</button>
+          <button class="badge" id="badge_popular">인기순</button>
+        </div>
+        <!-- <button class="btn-clear" ><i class="fa-solid fa-xmark"></i></button> -->
+      </div>
+      <div class="map_recommendation">
+        <div class="map_place_suggestion">
+          <div class="map_place">
+            <div class="map_place_info">
+              <a href="/mobile_html/shopdetail.html"><h2 class="storeName">브레디포스트 성수</h2></a>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 성동구, 성수동</span>
+            </div>
+            <div class="map_add_info">
+              <span class="likes"><i class="fa-regular fa-thumbs-up"></i> 3560</span>
+              <span class="distance">240m</span>
+            </div>
+          </div>
+          <div class="map_place_thum">
+            <img src="/Team_img/map_thum_01_01.jfif" alt="">
+            <img src="/Team_img/map_thum_01_02.jfif" alt="">
+            <img src="/Team_img/map_thum_01_03.jfif" alt="">
+            <img src="/Team_img/map_thum_01_04.jfif" alt="">
+            <img src="/Team_img/map_thum_01_05.jfif" alt="">
+          </div>
+        </div>
+        <div class="map_place_suggestion">
+          <div class="map_place">
+            <div class="map_place_info">
+              <h2 class="storeName">봉땅 서울숲점</h2>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 성동구, 성수동</span>
+            </div>
+            <div class="map_add_info">
+              <span class="likes"><i class="fa-regular fa-thumbs-up"></i> 1362</span>
+              <span class="distance">90m</span>
+            </div>
+          </div>
+          <div class="map_place_thum">
+            <img src="/Team_img/map_thum_02_01.jpeg" alt="">
+            <img src="/Team_img/map_thum_02_02.jpeg" alt="">
+            <img src="/Team_img/map_thum_02_03.jpeg" alt="">
+            <img src="/Team_img/map_thum_02_04.jpeg" alt="">
+          </div>
+        </div>
+        <div class="map_place_suggestion">
+          <div class="map_place">
+            <div class="map_place_info">
+              <h2 class="storeName">LOWIDE</h2>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 성동구, 성수동</span>
+            </div>
+            <div class="map_add_info">
+              <span class="likes"><i class="fa-regular fa-thumbs-up"></i> 530</span>
+              <span class="distance">800m</span>
+            </div>
+          </div>
+          <div class="map_place_thum">
+            <img src="/Team_img/map_thum_03_01.jpeg" alt="">
+            <img src="/Team_img/map_thum_03_02.jpeg" alt="">
+            <img src="/Team_img/map_thum_03_03.jpeg" alt="">
+            <img src="/Team_img/map_thum_03_04.jfif" alt="">
+            <img src="/Team_img/map_thum_03_05.jfif" alt="">
+          </div>
+        </div>
+        <button id="map_info_more">더보기</button>
+        <div class="map_place_suggestion more">
+          <div class="map_place">
+            <div class="map_place_info">
+              <h2 class="storeName">퍼먼트</h2>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 성동구, 성수동</span>
+            </div>
+            <div class="map_add_info">
+              <span class="likes"><i class="fa-regular fa-thumbs-up"></i> 352</span>
+              <span class="distance">100m</span>
+            </div>
+          </div>
+          <div class="map_place_thum">
+            <img src="/Team_img/map_thum_04_01.jfif" alt="">
+            <img src="/Team_img/map_thum_04_02.jfif" alt="">
+            <img src="/Team_img/map_thum_04_03.jfif" alt="">
+            <img src="/Team_img/map_thum_04_04.jfif" alt="">
+          </div>
+        </div>
+        <div class="map_place_suggestion more">
+          <div class="map_place">
+            <div class="map_place_info">
+              <h2 class="storeName"><a href="/mobile_html/shopdetail.html">포도빵집</a></h2>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 성동구, 성수동</span>
+            </div>
+            <div class="map_add_info">
+              <span class="likes"><i class="fa-regular fa-thumbs-up"></i> 106</span>
+              <span class="distance">50m</span>
+            </div>
+          </div>
+          <div class="map_place_thum">
+            <img src="/Team_img/map_thum_05_01.jpg" alt="">
+            <img src="/Team_img/map_thum_05_02.jpg" alt="">
+            <img src="/Team_img/map_thum_05_03.jpg" alt="">
+            <img src="/Team_img/map_thum_05_04.jpg" alt="">
+          </div>
+        </div>
+        <div class="map_place_suggestion more">
+          <div class="map_place">
+            <div class="map_place_info">
+              <h2 class="storeName">포레스트</h2>
+              <span class="locationIcon"><i class="fa-solid fa-location-dot"></i> 성동구, 성수동</span>
+            </div>
+            <div class="map_add_info">
+              <span class="likes"><i class="fa-regular fa-thumbs-up"></i> 182</span>
+              <span class="distance">75m</span>
+            </div>
+          </div>
+          <div class="map_place_thum">
+            <img src="/Team_img/map_thum_06_01.jpg" alt="">
+            <img src="/Team_img/map_thum_06_02.jpg" alt="">
+            <img src="/Team_img/map_thum_06_03.jpg" alt="">
+            <img src="/Team_img/map_thum_06_04.jpg" alt="">
+            <img src="/Team_img/map_thum_06_05.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gnb">
+      <a href="/mobile_html/main.html"><i class="fas fa-house"></i>홈</a>
+      <a href="/mobile_html/search.html"><i class="fa-solid fa-magnifying-glass"></i>검색</a>
+      <a href="/mobile_html/main_map.html"><i class="fa-regular fa-map"></i>지도</a>
+      <a href="/mobile_html/my_map_page.html"><i class="fa-regular fa-bookmark"></i>나의 저장</a>
+      <a href="/mobile_html/my_page.html"><i class="fa-regular fa-user"></i>내 정보</a>
+    </div>
+  </div>
+</body>
+</html>

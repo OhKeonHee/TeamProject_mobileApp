@@ -1,0 +1,255 @@
+/* map.html */
+body {
+  width: 23.5rem;
+  margin: 0 auto;
+}
+.map_img {
+    border: 1px solid red;
+    width: inherit;
+    height: inherit;
+    position: relative;
+  }
+  
+  .map_img img {
+    width: 23.5rem;
+    position: relative;
+  }
+  
+  .map_img > button {
+    position: absolute;
+    z-index: 999;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+  }
+  
+  .map_img > button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .map_img #Jongro {
+    top: 30px;
+    left: 145px;
+    width: 40px;
+    height: 50px;
+    transform: rotate(10deg);
+  }
+  
+  .map_img #Gangbuk {
+    top: 20px;
+    left: 255px;
+    width: 42px;
+    height: 50px;
+    transform: rotate(-10deg);
+  }
+  
+  .map_img #Nowon {
+    top: 10px;
+    left: 305px;
+    width: 40px;
+    height: 70px;
+    transform: rotate(-10deg);
+  }
+  
+  .map_img #Eunpyeong {
+    top: 10px;
+    left: 97px;
+    width: 40px;
+    height: 65px;
+    transform: rotate(12deg);
+  }
+  
+  .map_img #Gwanghwamun {
+    top: 92px;
+    left: 140px;
+    width: 70px;
+    height: 40px;
+    transform: rotate(10deg);
+  }
+  
+  .map_img #Daehakro {
+    top: 10px;
+    left: 195px;
+    width: 45px;
+    height: 40px;
+  }
+  
+  .map_img #Hongdae {
+    top: 130px;
+    left: 90px;
+    width: 55px;
+    height: 35px;
+    transform: rotate(10deg);
+  }
+  
+  .map_img #Sinchon {
+    top: 80px;
+    left: 70px;
+    width: 60px;
+    height: 40px;
+    transform: rotate(10deg);
+  }
+  
+  .map_img #Junggu {
+    top: 100px;
+    left: 218px;
+    width: 35px;
+    height: 77px;
+  }
+  
+  .map_img #Sangsu {
+    top: 170px;
+    left: 75px;
+    width: 63px;
+    height: 33px;
+    transform: rotate(10deg);
+  }
+  
+  .map_img #Myeongdong {
+    top: 138px;
+    left: 150px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .map_img #Jungnang {
+    top: 85px;
+    left: 315px;
+    width: 40px;
+    height: 60px;
+    transform: rotate(-9deg);
+  }
+  
+  .map_img #Dongdaemun {
+    top: 80px;
+    left: 255px;
+    width: 50px;
+    height: 45px;
+    transform: rotate(-7deg);
+  }
+  
+  .map_img #Kondae {
+    top: 130px;
+    left: 263px;
+    width: 50px;
+    height: 40px;
+    transform: rotate(-10deg);
+  }
+  
+  .map_img #Mapo {
+    top: 120px;
+    left: 30px;
+    width: 50px;
+    height: 47px;
+    transform: rotate(14deg);
+  }
+  
+  .map_img #Yongsan {
+    top: 183px;
+    left: 145px;
+    width: 52px;
+    height: 38px;
+  }
+  
+  .map_img #Itaewon {
+    top: 187px;
+    left: 205px;
+    width: 55px;
+    height: 30px;
+    transform: rotate(-20deg);
+    border-radius: 30px;
+  }
+  
+  .map_img #Samcheongdong {
+    top: 60px;
+    left: 190px;
+    width: 50px;
+    height: 33px;
+    transform: rotate(5deg);
+  }
+  
+  .map_img #Gangseo {
+    top: 193px;
+    left: 17px;
+    width: 45px;
+    height: 60px;
+  }
+  
+  .map_img #Dongjag {
+    top: 250px;
+    left: 120px;
+    width: 48px;
+    height: 50px;
+    transform: rotate(15deg);
+  }
+  
+  .map_img #Garosugil {
+    top: 245px;
+    left: 210px;
+    width: 55px;
+    height: 35px;
+    transform: rotate(-20deg);
+  }
+  
+  .map_img #Gangdong {
+    top: 170px;
+    left: 310px;
+    width: 55px;
+    height: 40px;
+  }
+  
+  .map_img #Yeongdeungpo {
+    top: 227px;
+    left: 67px;
+    width: 52px;
+    height: 45px;
+    transform: rotate(30deg);
+  }
+  
+  .map_img #Seocho {
+    top: 263px;
+    left: 173px;
+    width: 35px;
+    height: 68px;
+  }
+  
+  .map_img #Gangnam_station {
+    top: 285px;
+    left: 215px;
+    width: 60px;
+    height: 35px;
+    transform: rotate(-20deg);
+  }
+  
+  .map_img #Songpa {
+    top: 210px;
+    left: 320px;
+    width: 35px;
+    height: 60px;
+    transform: rotate(-27deg);
+    border-radius: 10px 40px 10px 10px;
+  }
+  
+  .map_img #Guro {
+    top: 260px;
+    left: 30px;
+    width: 57px;
+    height: 45px;
+    border-radius: 10px 80px 10px 10px;
+  }
+  
+  .map_img #Gwanag {
+    top: 302px;
+    left: 90px;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px 30px 10px 10px;
+  }
+  
+  .map_img #Gangnamgu {
+    top: 226px;
+    left: 273px;
+    width: 43px;
+    height: 68px;
+    transform: rotate(-20deg);
+  }

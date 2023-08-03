@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="/Team.js/signup.js"></script>
+  <link rel="stylesheet" href="/Team_css/style(KEONHEE).css">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/79e902675f.js" crossorigin="anonymous"></script>
+  <title>닉네임 설정</title>
+</head>
+<body>
+  <div class="container nickname">
+    <div class="nickname_form">
+      <div class="userImage">
+        <div class="userImage_box">
+          <label for="userImage_select">대표 이미지 설정</label>
+          <div id="userImage_select">
+            <!-- 이미지 보여주는 곳 -->
+            <label for="image_select" class="plus"><i class="fas fa-plus"></i></label>
+          </div>
+          <input type="file" id="image_select" accept="image/*" onchange="setThumbnail(event);">
+        </div>
+      </div>
+      <div class="nickname">
+        <label for="nickname_input">닉네임 *</label>
+        <input type="text" placeholder="15자 이내 영문, 한글로 입력해주세요." id="nickname_input">
+        <p id="nickname_error" class="error">* 닉네임을 입력하지 않았습니다.</p>
+      </div>
+      <div class="nickname">
+        <label for="email_input">이메일 *</label>
+        <input type="text" placeholder="이메일을 입력해주세요." id="email_input">
+        <p id="email_error" class="error">* 이메일 형식이 올바르지 않거나 입력하지 않았습니다.</p>
+      </div>
+      <div class="nickname">
+        <label for="password_input">비밀번호 *</label>
+        <input type="password" placeholder="4이상 15자 이내의 비밀번호를 입력해주세요." id="password_input">
+        <p id="password_error" class="error">* 비밀번호 형식이 올바르지 않거나 입력하지 않았습니다.</p>
+      </div>
+      <div class="birth">
+        <label>생년월일</label>
+        <div class="birth_select">
+          <select id="yearSelect"></select>
+          <select id="monthSelect"><option>--</option></select>
+          <select id="daySelect"><option>--</option></select>
+        </div>
+      </div>
+      <div class="gender">
+        <label>성별</label>
+        <div id="gender">
+          <div class="man">
+            <label for="man">남성</label>
+            <input type="radio" id="man" name="gender" checked>
+          </div>
+          <div class="woman">
+            <label for="woman">여성</label>
+            <input type="radio" id="woman" name="gender">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nickname_btn">
+      <a href="/mobile_html/interestsPage.html"><button class="nickname_submit">
+        입소문 시작하기
+      </button></a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/79e902675f.js" crossorigin="anonymous"></script>
+  <!--Custom CSS & JS-->
+  <script defer src="/Team.js/post.js"></script>
+  <link rel="stylesheet" href="/Team_css/style(KEONHEE).css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container community" id="community_post">
+    <header>
+      <a href="#" onclick="history.back()"><i class="fas fa-chevron-left"></i></a>
+      <h2 id="community_title">소문러's TALK</h2>
+    </header>
+    <div class="post_area">
+      <div class="post" id="post1">
+        <div id="userImage">
+          <img src="/Team_img/post_userImage_1.jpg" alt="">
+        </div>
+        <div class="post_right">
+          <h3 id="userName">스폰지밥</h3>
+          <div id="post_footer">
+            <span id="post_time">3시간 전</span>
+          </div>
+          <a href="/mobile_html/community_post/post1.html"><span id="post_txt">달팽이 사료 맛있는 집 추천해주세요.</span></a>
+        </div>
+        <div class="post_icon">
+          <i class="fa-regular fa-thumbs-up"></i><span id="thumb_num">3</span>
+          <i class="fa-regular fa-message"></i><span>4</span>
+          <i class="fa-regular fa-heart"></i><span id="heart_num">6</span>
+        </div>
+      </div>
+      <div class="post_btn">
+        <button id="thumb"><i class="fa-regular fa-thumbs-up"></i> 공감</button>
+        <button id="reply_icon"><i class="fa-regular fa-message"></i> 댓글달기</button>
+        <button id="heart"><i class="fa-regular fa-heart"></i> 관심</button>
+      </div>
+      <div class="reply_txt">
+        
+      </div>
+      <div class="reply_area">
+        <input type="text"  id="reply_input" placeholder="댓글을 입력해주세요."/>
+        <button id="reply_submit"><i class="fa-regular fa-paper-plane"></i></button>
+      </div>
+      <div id="heart_div">
+        <span>관심목록에 추가 되었어요.</span>
+        <a href="/mobile_html/my_page.html"><span>관심목록 보기</span></a>
+      </div>
+      <div id="reply_err_div">
+        <span>댓글을 입력해주세요.</span>
+      </div>
+      <div id="login_err_div">
+        <span>댓글 기능을 사용하시려면 회원가입을 해주세요.</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
