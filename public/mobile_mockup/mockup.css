@@ -107,3 +107,16 @@ iframe {
   position: absolute;
   top: 42px; left: 3px; scale: 1.026;
 }
+.gotoweb {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+.gotoweb a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
